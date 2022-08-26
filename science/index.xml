@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sciences on Information Set Blog</title>
+    <link>http://verma-bipul.github.io/science/</link>
+    <description>Recent content in Sciences on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Aug 2022 09:47:53 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>History of Uncertainity Principle</title>
+      <link>http://verma-bipul.github.io/science/history_of_uncertainity_principle/</link>
+      <pubDate>Fri, 26 Aug 2022 09:47:53 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/science/history_of_uncertainity_principle/</guid>
+      <description>Uncertainty priciple is like the single canonball destroying the whole fortress of determinism.</description>
+    </item>
+    
+  </channel>
+</rss>
