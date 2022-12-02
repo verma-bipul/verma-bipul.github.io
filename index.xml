@@ -8,21 +8,103 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>History of Uncertainity Principle</title>
-      <link>http://verma-bipul.github.io/science/history_of_uncertainity_principle/</link>
-      <pubDate>Fri, 26 Aug 2022 09:47:53 -0500</pubDate>
+      <title>Vim</title>
+      <link>http://verma-bipul.github.io/programming/vim/</link>
+      <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/science/history_of_uncertainity_principle/</guid>
-      <description>Uncertainty priciple is like the single canonball destroying the whole fortress of determinism.</description>
+      <guid>http://verma-bipul.github.io/programming/vim/</guid>
+      <description>Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
+There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&amp;rsquo;t edit the file.</description>
     </item>
     
     <item>
-      <title>Creating Website</title>
-      <link>http://verma-bipul.github.io/random/creating_website/</link>
+      <title>Quotes</title>
+      <link>http://verma-bipul.github.io/random/quotes/</link>
+      <pubDate>Sat, 29 Oct 2022 10:41:57 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/quotes/</guid>
+      <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
+Poor people need more money, not self-help tricks.
+Quotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.
+The only thing more dangerous than ignorance is arrogance.
+Try not to become a man of success but rather a man of value.</description>
+    </item>
+    
+    <item>
+      <title>R_basic_data_analysis</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
+      <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
+      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) Data Exploration names(family_data) # gives the list of column names present in the dataset head(family_data) # gives a few starting values of the all column in the dataset dim(family_data) # gives the dimension fo the dataset i.e rows and columns str(family_data) # give the structure of columns in the dataset </description>
+    </item>
+    
+    <item>
+      <title>R_basics</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basics/</link>
+      <pubDate>Sun, 04 Sep 2022 12:16:42 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basics/</guid>
+      <description>Intro To begin with we first set the working directory of a project. The code to do so is:
+getwd() # This will give the current working directory setwd(&amp;#34;./../dir_path&amp;#34;) # This will set the new working directory. The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.
+install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tidyverse) # to call a package Standard Packages in R tidyverse: This is a package specifically designed for data science.</description>
+    </item>
+    
+    <item>
+      <title>Git_basics</title>
+      <link>http://verma-bipul.github.io/programming/git/git_basics/</link>
+      <pubDate>Wed, 31 Aug 2022 17:17:36 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/git/git_basics/</guid>
+      <description>Basics of Version Control using Git Git is a platform for version control. If there are a large number of people working on a single project then keeping track of who made what changes when and where becomes very important.
+In my experience the best way to learn git it by demostration.
+Getting a copy of repository on local device We don&amp;rsquo;t want to make changes in the original repository which is there in the cloud (or at remote-location), hence we make a clone (or copy) of the repository and save it locally.</description>
+    </item>
+    
+    <item>
+      <title>Data_manupulation_stata</title>
+      <link>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</link>
+      <pubDate>Tue, 30 Aug 2022 20:12:28 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</guid>
+      <description>Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
+TIPS
+The first thing to do is to identify at which level is the data unique.</description>
+    </item>
+    
+    <item>
+      <title>Gen_vs_egen</title>
+      <link>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</link>
+      <pubDate>Tue, 30 Aug 2022 17:32:59 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</guid>
+      <description>I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
+gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.</description>
+    </item>
+    
+    <item>
+      <title>Stata Basics</title>
+      <link>http://verma-bipul.github.io/programming/stata/stata_basics/</link>
+      <pubDate>Mon, 29 Aug 2022 16:38:46 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/stata_basics/</guid>
+      <description>How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
+To set the working directoty use the command:
+cd &amp;#34;&amp;lt;path to file&amp;gt;&amp;#34; cd &amp;#34;E:\dataset&amp;#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
+global &amp;lt;var_name&amp;gt; &amp;#34;&amp;lt;directory_path_string&amp;gt;&amp;#34; global dataset &amp;#34;E:\dataset&amp;#34; cd &amp;#34;$dataset&amp;#34; How to load dataset in stata?</description>
+    </item>
+    
+    <item>
+      <title>Creating Website using Hugo and Github</title>
+      <link>http://verma-bipul.github.io/programming/creating_website/</link>
       <pubDate>Fri, 26 Aug 2022 08:45:17 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/random/creating_website/</guid>
-      <description>This is a post which will try to teach how to create a website blog.</description>
+      <guid>http://verma-bipul.github.io/programming/creating_website/</guid>
+      <description>I was long looking for a hugo theme where I could organize my content in a tree directory structure. I finally found the one that I am currently using.
+The theme is named the-roots-home. The link to its gihub repo is https://github.com/rmsubekti/the-roots-home
+In order to learn how to actually publish contents, I used the tutorial here https://www.youtube.com/watch?v=LIFvgrRxdt4
+To compile and view the site locally run
+hugo server Publishing Contents Once content has been added its time to public them on the internet.</description>
     </item>
     
   </channel>

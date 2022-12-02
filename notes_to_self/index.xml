@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes_to_selves on Information Set Blog</title>
+    <link>http://verma-bipul.github.io/notes_to_self/</link>
+    <description>Recent content in Notes_to_selves on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Oct 2022 16:22:37 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/notes_to_self/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thinking_like_economist</title>
+      <link>http://verma-bipul.github.io/notes_to_self/thinking_like_economist/</link>
+      <pubDate>Sun, 23 Oct 2022 16:22:37 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/notes_to_self/thinking_like_economist/</guid>
+      <description>As an economist, there are things that we would like to understand (like scientists) and there are problems which we would like to solve (like engineers).1
+I at some point compiled a list of questions to ask myself while working on a project or listening to a presentation.
+What is the broad economic question that we are trying to answer? What is the broadest domain where this question or problem resides.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Set Blog</title>
+    <link>http://verma-bipul.github.io/programming/r/</link>
+    <description>Recent content on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R_basic_data_analysis</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
+      <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
+      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) Data Exploration names(family_data) # gives the list of column names present in the dataset head(family_data) # gives a few starting values of the all column in the dataset dim(family_data) # gives the dimension fo the dataset i.e rows and columns str(family_data) # give the structure of columns in the dataset </description>
+    </item>
+    
+    <item>
+      <title>R_basics</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basics/</link>
+      <pubDate>Sun, 04 Sep 2022 12:16:42 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basics/</guid>
+      <description>Intro To begin with we first set the working directory of a project. The code to do so is:
+getwd() # This will give the current working directory setwd(&amp;#34;./../dir_path&amp;#34;) # This will set the new working directory. The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.
+install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tidyverse) # to call a package Standard Packages in R tidyverse: This is a package specifically designed for data science.</description>
+    </item>
+    
+  </channel>
+</rss>

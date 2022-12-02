@@ -6,14 +6,18 @@
     <description>Recent content in Randoms on Information Set Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Aug 2022 08:45:17 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/random/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 10:41:57 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/random/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating Website</title>
-      <link>http://verma-bipul.github.io/random/creating_website/</link>
-      <pubDate>Fri, 26 Aug 2022 08:45:17 -0500</pubDate>
+      <title>Quotes</title>
+      <link>http://verma-bipul.github.io/random/quotes/</link>
+      <pubDate>Sat, 29 Oct 2022 10:41:57 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/random/creating_website/</guid>
-      <description>This is a post which will try to teach how to create a website blog.</description>
+      <guid>http://verma-bipul.github.io/random/quotes/</guid>
+      <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
+Poor people need more money, not self-help tricks.
+Quotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.
+The only thing more dangerous than ignorance is arrogance.
+Try not to become a man of success but rather a man of value.</description>
     </item>
     
   </channel>
