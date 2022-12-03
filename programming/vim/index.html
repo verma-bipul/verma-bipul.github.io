@@ -59,7 +59,7 @@ There are three basic modes: (i) the command mode, (ii) the insert or edit mode,
     <div class="post-content" itemprop="articleBody">
         <h2 id="basic-editing-with-vim">Basic Editing with Vim</h2>
 <p>Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.</p>
-<p>There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&rsquo;t edit the file. To edit the mode one has to go to the instert mode by pressing the `i&rsquo; key. The last line mode is where we enter the commands to save files or perform other functionalities.</p>
+<p>There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&rsquo;t edit the file. To edit the mode one has to go to the insert mode by pressing the `i&rsquo; key. The last line mode is where we enter the commands to save files or perform other functionalities.</p>
 <h2 id="basic-navigation">Basic Navigation</h2>
 <ul>
 <li>h, j, k, l are used to navigate the pointer left, down,up and right.</li>
@@ -94,7 +94,7 @@ A - append at the end of a line</p>
 <p>The basic idea here is to enter the selection mode using v or V. Once we are in the selection mode, we can use the usual navigation tools to select the desired texts. V will select by line, v by words.
 The letter &lsquo;y&rsquo; which stands for yank copies the selected text to the buffer. To paste the selcted text, just use &lsquo;p&rsquo;. <br>
 To cut and paste in the visual mode one can use &rsquo;d&rsquo; followed by &lsquo;p&rsquo;.</p>
-<h2 id="search-and-repalce">Search and Repalce</h2>
+<h2 id="search-and-replace">Search and Replace</h2>
 <h2 id="some-other-useful-commands">Some other useful commands</h2>
 <ul>
 <li>To push vim to the background and return to the terminal we do &lsquo;ctrl+z&rsquo;. To come back we just type &lsquo;fg&rsquo;.</li>
@@ -103,14 +103,23 @@ To cut and paste in the visual mode one can use &rsquo;d&rsquo; followed by &lsq
 <h3 id="split-screen-functionality">Split Screen functionality</h3>
 <ul>
 <li>In order to open multiple files in split screen at the same time use the command  vi -o file1 file2&rsquo;. By default it will open files in a horizontal split.</li>
-<li>To toggle between the horizontal screens we use the &lsquo;ctrl + w&rsquo; followed by j to move down and k to move upj to move down and k to move up. The up and down keys works as well.</li>
+<li>To toggle between the horizontal screens we use the &lsquo;ctrl + w&rsquo; followed by j to move down and k to move up to move down and k to move up. The up and down keys works as well.</li>
 <li>Similarly &lsquo;ctrl+ w&rsquo; followed by h, l moves to left and right or one can simply use the cursor keys as well.</li>
 <li>To adujst the size of the splits: &lsquo;ctrl+W&rsquo; + = : equal horizonatal splits.</li>
 </ul>
 <h2 id="plugin-manager-in-vim">Plugin Manager in Vim</h2>
 <p>
 <a href="https://www.linuxhandbook.com/install-vim-plugins/" target="_blank" rel="nofollow noreferrer noopener">www.linuxhandbook.com/install-vim-plugins/</a></p>
-<h2 id="vim-configrations">Vim Configrations</h2>
+<h2 id="vim-configurations">Vim Configurations</h2>
+<p>Vim configrations are saved in the <code>~/.vimrc</code> configration file.</p>
+<p>One can add the follwing functionalites which will be active from the start.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span> <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">number</span> - <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">displays</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">numbers</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="spell-check-in-vim">Spell check in Vim</h2>
+<ul>
+<li>Simply add <code>set spell</code> in the config file.</li>
+<li>[s or ]s are used to navigate between the misspelled words.</li>
+<li>z= will give a list of suggested words.</li>
+</ul>
 <p>References:</p>
 <ol>
 <li>

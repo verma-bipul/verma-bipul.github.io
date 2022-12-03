@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>US Geographical Division by Authority</title>
+      <link>http://verma-bipul.github.io/random/us_geo_division/</link>
+      <pubDate>Sat, 03 Dec 2022 06:10:48 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/us_geo_division/</guid>
+      <description>Different US authorities divides US into different regions. Here is a list of number of regions that the entire US is divided into by name of authority.
+Table: Total number of divisions by authority1
+Authority Number of regions Region Names US Census Bureau 4 NE; MW; S; W Federal Reserve System 12 see here Time Zones 4 (+2) Eastern; Central; Mountain; Pacific (+Alaska; Hawaii) Federal Court System 13 see here BEA Regions 8 New Eng; ME; SE; Great Lakes; Plains; SW; Rocky Mountains; Far W Petroleum Administration of Defence Districts (PADD) 5 E Coast; W Coast; Gulf Coast; MW; Rocky Mountains Reference: https://www.</description>
+    </item>
+    
+    <item>
       <title>Vim</title>
       <link>http://verma-bipul.github.io/programming/vim/</link>
       <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
@@ -36,7 +47,7 @@ Try not to become a man of success but rather a man of value.</description>
       <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
-      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) Data Exploration names(family_data) # gives the list of column names present in the dataset head(family_data) # gives a few starting values of the all column in the dataset dim(family_data) # gives the dimension fo the dataset i.e rows and columns str(family_data) # give the structure of columns in the dataset </description>
+      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;) Data Exploration names(family_data) # gives the list of column names present in the dataset head(family_data) # gives a few starting values of the all column in the dataset dim(family_data) # gives the dimension fo the dataset i.e rows and columns str(family_data) # give the structure of columns in the dataset Subsetting in R subset(df, df$colname = c(a, c)) </description>
     </item>
     
     <item>
