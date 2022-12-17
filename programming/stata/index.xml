@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/stata/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Loops</title>
+      <link>http://verma-bipul.github.io/programming/stata/loops/</link>
+      <pubDate>Tue, 13 Dec 2022 10:03:20 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/loops/</guid>
+      <description>For loop in stata Looping through parallel lists local agrp &amp;#34;cat dog cow pig&amp;#34; local bgrp &amp;#34;meow woof moo oinkoink&amp;#34; local n : word count `agrp&amp;#39; forvalues i = 1/`n&amp;#39; { local a : word `i&amp;#39; of `agrp&amp;#39; local b : word `i&amp;#39; of `bgrp&amp;#39; di &amp;#34;`a&amp;#39; says `b&amp;#39;&amp;#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ </description>
+    </item>
+    
+    <item>
       <title>Data_manupulation_stata</title>
       <link>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</link>
       <pubDate>Tue, 30 Aug 2022 20:12:28 -0500</pubDate>

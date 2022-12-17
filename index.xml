@@ -8,6 +8,35 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Loops</title>
+      <link>http://verma-bipul.github.io/programming/stata/loops/</link>
+      <pubDate>Tue, 13 Dec 2022 10:03:20 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/loops/</guid>
+      <description>For loop in stata Looping through parallel lists local agrp &amp;#34;cat dog cow pig&amp;#34; local bgrp &amp;#34;meow woof moo oinkoink&amp;#34; local n : word count `agrp&amp;#39; forvalues i = 1/`n&amp;#39; { local a : word `i&amp;#39; of `agrp&amp;#39; local b : word `i&amp;#39; of `bgrp&amp;#39; di &amp;#34;`a&amp;#39; says `b&amp;#39;&amp;#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ </description>
+    </item>
+    
+    <item>
+      <title>Apply_fns</title>
+      <link>http://verma-bipul.github.io/programming/r/apply_fns/</link>
+      <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/apply_fns/</guid>
+      <description> https://www.datasciencemadesimple.com/apply-function-r/
+There are different kinds of apply functions:
+apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation </description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>http://verma-bipul.github.io/programming/terminal/</link>
+      <pubDate>Sun, 11 Dec 2022 18:01:16 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/terminal/</guid>
+      <description>Some useful terminal commands mkdir dir_name # Make Directory rm -r dir_name # Recursively remove content of a directory mv file1 dir1/ # move file1 to dir1 wget -O dir/file.ext url # download the file from url and save it in dir with filename file.ext wget url -P dir # download the file from url as save it in dir unzip file.zip #to unzip a file touch file_name.ext # create a new file open -a app_name file_name # open file using a specific application Accessing terminal command history Press Ctrl + R to enter the command history mode.</description>
+    </item>
+    
+    <item>
       <title>String_man</title>
       <link>http://verma-bipul.github.io/programming/r/string_man/</link>
       <pubDate>Thu, 08 Dec 2022 19:58:22 -0600</pubDate>
@@ -22,8 +51,8 @@
       <pubDate>Sat, 03 Dec 2022 10:40:09 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/r_plots/</guid>
-      <description>We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
-plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) </description>
+      <description>R Plots We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
+plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) GG Plots </description>
     </item>
     
     <item>
@@ -66,7 +95,7 @@ Try not to become a man of success but rather a man of value.</description>
       <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
-      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;, header = T, sep = &amp;#34;,&amp;#34;) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.e rows and columns str(data) # give the structure of columns in the dataset Subsetting in R subset(df, df$colname = c(a, c)) Counting the number of unique values in R length(unique(df)) Count NAs sum(is.</description>
+      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;, header = T, sep = &amp;#34;,&amp;#34;) Saving Dataset Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.e rows and columns str(data) # give the structure of columns in the dataset Select Columns in R subset(df, df$colname = c(a, c)) This will select columns a and c from the dataset</description>
     </item>
     
     <item>
