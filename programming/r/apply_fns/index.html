@@ -4,16 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Apply_fns - Information Set Blog</title>
-    <meta name="description" content=" https://www.datasciencemadesimple.com/apply-function-r/
-There are different kinds of apply functions:
-apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation ">
+    <meta name="description" content="There are different kinds of apply functions:
+apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
+apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/">
     <link rel="canonical" href="http://verma-bipul.github.io/programming/r/apply_fns/">
     <meta property="og:title" content="Apply_fns">
     <meta property="og:type" content="article">
     <meta property="og:url" content="http://verma-bipul.github.io/programming/r/apply_fns/">
-    <meta property="og:description" content=" https://www.datasciencemadesimple.com/apply-function-r/
-There are different kinds of apply functions:
-apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation ">
+    <meta property="og:description" content="There are different kinds of apply functions:
+apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
+apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/">
     <meta property="og:site_name" content="Information Set Blog">
     <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
     <meta name="generator" content="Hugo 0.108.0">
@@ -65,18 +65,24 @@ apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fu
         </span>
     </header>
     <div class="post-content" itemprop="articleBody">
-        <p>
-<a href="https://www.datasciencemadesimple.com/apply-function-r/" target="_blank" rel="nofollow noreferrer noopener">https://www.datasciencemadesimple.com/apply-function-r/</a></p>
-<p>There are different kinds of apply functions:</p>
+        <p>There are different kinds of apply functions:</p>
 <ul>
 <li>apply</li>
-<li>mapply</li>
+<li>lapply</li>
 <li>sapply</li>
+<li>mapply</li>
+<li>vapply</li>
+<li>rapply</li>
+<li>tappy</li>
 </ul>
+<p>The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.</p>
 <h3 id="apply">apply</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">apply</span>(df, <span style="color:#ae81ff">1</span>, fun) <span style="color:#75715e"># Row-wise operation</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">apply</span>(df, <span style="color:#ae81ff">2</span>, fun) <span style="color:#75715e"># Column-wise operation</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h3 id="reference">Reference</h3>
+<p>
+<a href="https://www.datasciencemadesimple.com/apply-function-r/" target="_blank" rel="nofollow noreferrer noopener">https://www.datasciencemadesimple.com/apply-function-r/</a></p>
+
     </div>
 </article>
 <div class="pagination">

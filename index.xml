@@ -33,9 +33,9 @@ merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common 
       <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/apply_fns/</guid>
-      <description> https://www.datasciencemadesimple.com/apply-function-r/
-There are different kinds of apply functions:
-apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation </description>
+      <description>There are different kinds of apply functions:
+apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
+apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/</description>
     </item>
     
     <item>
