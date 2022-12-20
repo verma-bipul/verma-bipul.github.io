@@ -8,14 +8,26 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Recursively_reduce</title>
+      <link>http://verma-bipul.github.io/programming/r/recursively_reduce/</link>
+      <pubDate>Sun, 18 Dec 2022 17:11:38 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/recursively_reduce/</guid>
+      <description>Reduce is a powerful function in R. It applies a function recursively to a list. One simple use of reduce function is to merge large number of datasets in a recursive fashion.
+Reduce usually takes a binary function and a list as its input.
+Example:
+Reduce(intersect, list(a, b, c)) # This is same as the command below intersect((intersect(a,b),c) </description>
+    </item>
+    
+    <item>
       <title>Merging_in_R</title>
       <link>http://verma-bipul.github.io/programming/r/merging_in_r/</link>
       <pubDate>Sat, 17 Dec 2022 16:53:48 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/merging_in_r/</guid>
       <description>Merging in R The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
-Inner Join: This means the merged dataset will have the common elements of the two datasets.
-merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common columns in the two datasets # this is a inner join which keeps only the common elements in the two datasets Outer Join: This joins datasets with elements present in any one of them.</description>
+Inner Join: This means the merged dataset will have the common elements of the two datasets by the column name declared.
+merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common columns in the two datasets # this is a inner join which keeps only the common elements in the two datasets Make sure that one has unique values in the declared column by which merging is to be done.</description>
     </item>
     
     <item>
