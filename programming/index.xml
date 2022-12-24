@@ -22,8 +22,8 @@
       <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/vim/</guid>
-      <description>Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
-There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&amp;rsquo;t edit the file.</description>
+      <description>CAUTION It is strictly advised not to use vim if one is not a pro programmer. One is most likely to waste a lot of time doing simple stuffs on vim. This guide is meant as a basic starting point to browse through files, make some small changes using terminal and vim. For programming the best IDE in my opinion is VS Code.
+Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard.</description>
     </item>
     
     <item>
