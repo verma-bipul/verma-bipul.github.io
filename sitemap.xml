@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://verma-bipul.github.io/datasets/wrds/</loc>
+    <lastmod>2022-12-27T12:19:40-06:00</lastmod>
+  </url><url>
+    <loc>http://verma-bipul.github.io/datasets/data_at_umn/</loc>
+    <lastmod>2022-12-24T09:37:31-06:00</lastmod>
+  </url><url>
     <loc>http://verma-bipul.github.io/datasets/patents_and_innovation/</loc>
     <lastmod>2022-12-19T14:16:37-06:00</lastmod>
   </url><url>

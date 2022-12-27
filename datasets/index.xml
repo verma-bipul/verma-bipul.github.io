@@ -8,6 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Dec 2022 13:54:06 -0600</lastBuildDate><atom:link href="http://verma-bipul.github.io/datasets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>WRDS</title>
+      <link>http://verma-bipul.github.io/datasets/wrds/</link>
+      <pubDate>Tue, 27 Dec 2022 12:19:40 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/datasets/wrds/</guid>
+      <description>WRDS is the go to database to access all finance related datasets. Navigating through WRDS can be challenging for beginners.
+The first order of business should be to register for WRDS at https://wrds-www.wharton.upenn.edu/ using your university email. Universities usually subscribe to part of the database.
+Next read the guide here: https://libguides.stanford.edu/library/wrds to have an intially idea of which dataset to look for.
+Compustat Compustat contains financial data for all publicly traded firms in US.</description>
+    </item>
+    
+    <item>
+      <title>Data_at_umn</title>
+      <link>http://verma-bipul.github.io/datasets/data_at_umn/</link>
+      <pubDate>Sat, 24 Dec 2022 09:37:31 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/datasets/data_at_umn/</guid>
+      <description>University of Minnesota Library also provides access to several datasets. For instance it subscribes to Statista. For a more comprehensive list visit the link below:
+https://libguides.umn.edu/FindResourcesbyFormat/datasets
+There is also a specific section related to economics here:
+https://libguides.umn.edu/econdata
+In addition, if one needs access to restricted-use datasets, one can contact the FSRDC at Minnesota. Here is their webpage:
+https://mnrdc.umn.edu/
+One will typically need a research proposal to gain access to restricted-datasets.</description>
+    </item>
+    
+    <item>
       <title>Patents_and_innovation</title>
       <link>http://verma-bipul.github.io/datasets/patents_and_innovation/</link>
       <pubDate>Mon, 19 Dec 2022 14:16:37 -0600</pubDate>
@@ -23,7 +50,9 @@ https://docs.google.com/spreadsheets/d/1bdyhGrj0oNz-_qW3Rv2GNGqhZZ73rgj-DYWePLA_
       <pubDate>Mon, 19 Dec 2022 13:57:03 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/datasets/data_aggregators/</guid>
-      <description>Here I list website which aggregate and clean data from different places.
+      <description>Below is a website that does exactly what I&amp;rsquo;m trying to do - list all the datasets that can be useful for research.
+https://econdata.net/subject-links/ Several of the links in the above website are broken, but still serves as a good guide.
+Here I list website which aggregate and clean data from different places.
 1. IPUMS https://www.ipums.org/
 2. NHGIS https://www.nhgis.org/
 3. Social Explorer https://www.socialexplorer.com/explore-maps</description>
@@ -66,8 +95,7 @@ Data Source https://www.kauffman.org/entrepreneurship/research/comets/ </descrip
       
       <guid>http://verma-bipul.github.io/datasets/acs/</guid>
       <description>Type: Public Use MicroData
-The American Community Survey (ACS) contains data on rental rate at the census tract level.
-It also contains information on characteristics such as the poverty rate and racial demographics at census tract level.</description>
+The American Community Survey (ACS) data on at household and individual level on variables related to demographics and income.</description>
     </item>
     
   </channel>
