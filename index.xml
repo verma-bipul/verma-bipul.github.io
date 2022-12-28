@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Grouping_in_R</title>
+      <link>http://verma-bipul.github.io/programming/r/grouping_in_r/</link>
+      <pubDate>Tue, 27 Dec 2022 14:56:17 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/grouping_in_r/</guid>
+      <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll using that.
+The syntax is as follows:
+df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:</description>
+    </item>
+    
+    <item>
       <title>WRDS</title>
       <link>http://verma-bipul.github.io/datasets/wrds/</link>
       <pubDate>Tue, 27 Dec 2022 12:19:40 -0600</pubDate>
@@ -200,9 +211,9 @@ The American Community Survey (ACS) data on at household and individual level on
       <guid>http://verma-bipul.github.io/random/quotes/</guid>
       <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
 Poor people need more money, not self-help tricks.
+The smallest deed is better than the greatest intention.
 Quotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.
-The only thing more dangerous than ignorance is arrogance.
-Try not to become a man of success but rather a man of value.</description>
+The only thing more dangerous than ignorance is arrogance.</description>
     </item>
     
     <item>

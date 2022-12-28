@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Grouping_in_R - Information Set Blog</title>
+    <meta name="description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.
+The syntax is as follows:
+df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/r/grouping_in_r/">
+    <meta property="og:title" content="Grouping_in_R">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/r/grouping_in_r/">
+    <meta property="og:description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.
+The syntax is as follows:
+df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/">
+    <span itemprop="name">r</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/grouping_in_r/">
+    <span itemprop="name">grouping_in_r</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Grouping_in_R</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-12-27T14:56:17&#43;07:00" itemprop="datePublished">
+                Tue, 27 Dec 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <p>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.</p>
+<p>The syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df_grouped <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(col_names) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#a6e22e">summarize</span>(gr_col_name <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(col_name))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># Given below are a list of functions that be used:</span>
+</span></span><span style="display:flex;"><span>sum
+</span></span><span style="display:flex;"><span>min 
+</span></span><span style="display:flex;"><span>max
+</span></span><span style="display:flex;"><span>mean
+</span></span><span style="display:flex;"><span>sd
+</span></span><span style="display:flex;"><span>IQR
+</span></span><span style="display:flex;"><span>mad
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">quantile</span>(col_name, probs <span style="color:#f92672">=</span> <span style="color:#ae81ff">.9</span>) <span style="color:#75715e">#- finds the 90th percentile for group</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">n</span>()  <span style="color:#75715e">#-counts the number of observations</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">n_distinct</span>(col_name) <span style="color:#75715e">#- counts the number of unique observations</span>
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>class_mean <span style="color:#f92672">&lt;-</span> scores <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(class_code) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">summarize</span>(mean_score <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(marks)) 
+</span></span></code></pre></div><h3 id="custom-functions-with-mutate">Custom functions with mutate</h3>
+<p>Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> (bpm <span style="color:#f92672">-</span> <span style="color:#a6e22e">mean</span>(bpm))^2)
+</span></span></code></pre></div><h3 id="group-and-select">Group and select</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> (bpm <span style="color:#f92672">-</span> <span style="color:#a6e22e">mean</span>(bpm))^2) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">select</span>(genre, mean_bpm)
+</span></span></code></pre></div><h3 id="ungroup">Ungroup</h3>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">group_by</span>(genre) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(bpm) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(my_grouped_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(mean_bpm)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(my_regular_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(mean_bpm))
+</span></span></code></pre></div><h2 id="reference">Reference</h2>
+<p>
+<a href="https://builtin.com/data-science/grouping-r" target="_blank" rel="nofollow noreferrer noopener">https://builtin.com/data-science/grouping-r</a></p>
+<p>
+<a href="https://www.statology.org/group-summarize-data-r/" target="_blank" rel="nofollow noreferrer noopener">https://www.statology.org/group-summarize-data-r/</a></p>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="http://verma-bipul.github.io/programming/r/recursively_reduce/">Previous Post</a> </div>
+    
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>
