@@ -71,8 +71,8 @@ Reduce(intersect, list(a, b, c)) # This is same as the command below intersect((
 One simple use of reduce function is to merge large number of datasets in a recursive fashion.</p>
 <p>Reduce usually takes a binary function and a list as its input.</p>
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">Reduce</span>(intersect, <span style="color:#a6e22e">list</span>(a, b, c)) <span style="color:#75715e"># This is same as the command below</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">intersect</span>((<span style="color:#a6e22e">intersect</span>(a,b),c)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">Reduce</span><span class="p">(</span><span class="n">intersect</span><span class="p">,</span> <span class="nf">list</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="c1"># This is same as the command below</span>
+</span></span><span class="line"><span class="cl"><span class="nf">intersect</span><span class="p">((</span><span class="nf">intersect</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">),</span><span class="n">c</span><span class="p">)</span>
 </span></span></code></pre></div>
     </div>
 </article>

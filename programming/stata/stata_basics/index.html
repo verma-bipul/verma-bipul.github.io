@@ -70,26 +70,26 @@ global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34; global dataset &
         <h2 id="how-to-set-the-working-directory-in-stata">How to set the working directory in stata?</h2>
 <p>The first thing to do when you start Stata is to set the working directory correctly.</p>
 <p>To set the working directoty use the command:</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">cd &#34;&lt;path to file&gt;&#34;
-cd &#34;E:\dataset&#34;    ///for example
-</code></pre><p>If the directory path name is long, then one can alternatively define a global variable and call it as and when required.</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34;
-global dataset &#34;E:\dataset&#34;   
-cd &#34;$dataset&#34;
-</code></pre><h2 id="how-to-load-dataset-in-stata">How to load dataset in stata?</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd &#34;&lt;path to file&gt;&#34;
+</span></span><span class="line"><span class="cl">cd &#34;E:\dataset&#34;    ///for example
+</span></span></code></pre></div><p>If the directory path name is long, then one can alternatively define a global variable and call it as and when required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34;
+</span></span><span class="line"><span class="cl">global dataset &#34;E:\dataset&#34;   
+</span></span><span class="line"><span class="cl">cd &#34;$dataset&#34;
+</span></span></code></pre></div><h2 id="how-to-load-dataset-in-stata">How to load dataset in stata?</h2>
 <p>For this we use the following command.</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">use &#34;&lt;path_to_file&gt;&#34;
-use &#34;E:\dataset\cars.dta&#34;
-</code></pre><h2 id="basic-data-exploration-in-stata">Basic data exploration in stata</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">use &#34;&lt;path_to_file&gt;&#34;
+</span></span><span class="line"><span class="cl">use &#34;E:\dataset\cars.dta&#34;
+</span></span></code></pre></div><h2 id="basic-data-exploration-in-stata">Basic data exploration in stata</h2>
 <p>Once the dataset is laoded in  temperory memory one can use the following commands.</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">describe // gives the number of obervations and a list of variables   
-
-codebook // gives summary statistics for each of the variable. The execution if this command may be slow if there are a lot of obervation or variables in the dataset.   
-
-sum &lt;variable_name&gt;  // gives the summary statistics for the selected variable
-
-list &lt;var_name&gt;   // also give brief summary stats for the variables
-</code></pre><p>Another useful thing to identify about the dataset is what consititues a unique observation in the dataset.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">describe // gives the number of obervations and a list of variables   
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">codebook // gives summary statistics for each of the variable. The execution if this command may be slow if there are a lot of obervation or variables in the dataset.   
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sum &lt;variable_name&gt;  // gives the summary statistics for the selected variable
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">list &lt;var_name&gt;   // also give brief summary stats for the variables
+</span></span></code></pre></div><p>Another useful thing to identify about the dataset is what consititues a unique observation in the dataset.</p>
 <h2 id="helpful-references">Helpful References</h2>
 <p>There are a lot of resources out there to learn stata. Below are links to a few of them which themselves contain further links depending on the specifics.</p>
 <ol>

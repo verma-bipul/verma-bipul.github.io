@@ -67,11 +67,11 @@ install.packages(&#34;tidyverse&#34;) # to install a package library(tidyverse) 
     <div class="post-content" itemprop="articleBody">
         <h2 id="intro">Intro</h2>
 <p>To begin with we first set the working directory of a project. The code to do so is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">getwd</span>()  <span style="color:#75715e"># This will give the current working directory</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setwd</span>(<span style="color:#e6db74">&#34;./../dir_path&#34;</span>)  <span style="color:#75715e"># This will set the new working directory.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">getwd</span><span class="p">()</span>  <span class="c1"># This will give the current working directory</span>
+</span></span><span class="line"><span class="cl"><span class="nf">setwd</span><span class="p">(</span><span class="s">&#34;./../dir_path&#34;</span><span class="p">)</span>  <span class="c1"># This will set the new working directory.</span>
 </span></span></code></pre></div><p>The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;tidyverse&#34;</span>) <span style="color:#75715e"># to install a package</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(tidyverse)  <span style="color:#75715e"># to call a package</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;tidyverse&#34;</span><span class="p">)</span> <span class="c1"># to install a package</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>  <span class="c1"># to call a package</span>
 </span></span></code></pre></div><h2 id="standard-packages-in-r">Standard Packages in R</h2>
 <ul>
 <li>tidyverse: This is a package specifically designed for data science.</li>
@@ -80,14 +80,14 @@ install.packages(&#34;tidyverse&#34;) # to install a package library(tidyverse) 
 <li>random: to draw random numbers</li>
 </ul>
 <h2 id="some-useful-commands">Some Useful Commands</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">remove</span>(obj_name)   <span style="color:#75715e"># to remove object from workplace</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">remove</span>(list <span style="color:#f92672">=</span> <span style="color:#a6e22e">ls</span>()) <span style="color:#75715e"># to remove everything from workplace</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">source</span>(<span style="color:#e6db74">&#34;file_name.R&#34;</span>) <span style="color:#75715e"># to run R script from start to end</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">remove</span><span class="p">(</span><span class="n">obj_name</span><span class="p">)</span>   <span class="c1"># to remove object from workplace</span>
+</span></span><span class="line"><span class="cl"><span class="nf">remove</span><span class="p">(</span><span class="n">list</span> <span class="o">=</span> <span class="nf">ls</span><span class="p">())</span> <span class="c1"># to remove everything from workplace</span>
+</span></span><span class="line"><span class="cl"><span class="nf">source</span><span class="p">(</span><span class="s">&#34;file_name.R&#34;</span><span class="p">)</span> <span class="c1"># to run R script from start to end</span>
 </span></span></code></pre></div><h2 id="some-useful-shortcuts">Some Useful Shortcuts</h2>
-<pre tabindex="0"><code>cmd + shift + enter  # to run the entire R script
-cmd + enter   # to run current line
-cmd + shift + c # to comment out selected line
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmd + shift + enter  # to run the entire R script
+</span></span><span class="line"><span class="cl">cmd + enter   # to run current line
+</span></span><span class="line"><span class="cl">cmd + shift + c # to comment out selected line
+</span></span></code></pre></div>
     </div>
 </article>
 <div class="pagination">

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fellowships on Information Set Blog</title>
+    <link>http://verma-bipul.github.io/acad/fellowships/</link>
+    <description>Recent content in Fellowships on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2022 14:40:56 -0600</lastBuildDate><atom:link href="http://verma-bipul.github.io/acad/fellowships/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fellowship_list</title>
+      <link>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</link>
+      <pubDate>Thu, 29 Dec 2022 14:40:27 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</guid>
+      <description>The following is a list of fellowships targeted towards grad students in economics.
+https://sites.google.com/view/elisagiannone/others?authuser=0</description>
+    </item>
+    
+  </channel>
+</rss>

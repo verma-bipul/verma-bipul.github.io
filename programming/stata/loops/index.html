@@ -63,24 +63,24 @@
     <div class="post-content" itemprop="articleBody">
         <h2 id="for-loop-in-stata">For loop in stata</h2>
 <h2 id="looping-through-parallel-lists">Looping through parallel lists</h2>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">local agrp &#34;cat dog cow pig&#34;
-
-local bgrp &#34;meow woof moo oinkoink&#34;
-
-local n : word count `agrp&#39;
-
-forvalues i = 1/`n&#39; {
-    local a : word `i&#39; of `agrp&#39;
-  local b : word `i&#39; of `bgrp&#39;
-   di &#34;`a&#39; says `b&#39;&#34;
-}
-
-/// Output
-cat says meow
-dog says woof
-cow says moo
-pig says oinkoink
-</code></pre><h3 id="references">References</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">local agrp &#34;cat dog cow pig&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">local bgrp &#34;meow woof moo oinkoink&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">local n : word count `agrp&#39;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">forvalues i = 1/`n&#39; {
+</span></span><span class="line"><span class="cl">    local a : word `i&#39; of `agrp&#39;
+</span></span><span class="line"><span class="cl">  local b : word `i&#39; of `bgrp&#39;
+</span></span><span class="line"><span class="cl">   di &#34;`a&#39; says `b&#39;&#34;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/// Output
+</span></span><span class="line"><span class="cl">cat says meow
+</span></span><span class="line"><span class="cl">dog says woof
+</span></span><span class="line"><span class="cl">cow says moo
+</span></span><span class="line"><span class="cl">pig says oinkoink
+</span></span></code></pre></div><h3 id="references">References</h3>
 <ol>
 <li>
 <a href="https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/" target="_blank" rel="nofollow noreferrer noopener">https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/</a></li>

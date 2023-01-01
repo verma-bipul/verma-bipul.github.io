@@ -77,27 +77,27 @@ The first thing to do is to identify at which level is the data unique.">
 <p>The collapse command is used to reduce the micro level at which data is presented. For instance if the smallest level at which the data is presented is monthly level, then it can be collapsed to be presented at yearly level.</p>
 <p>The following example is taken from stata tutorials ucla.<br>
 Suppose we have a dataset that looks like the following:</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">
-          famid        sex   sexdum1   sexdum2 
-  1.         1          f         1         0  
-  2.         1          m         0         1  
-  3.         1          f         1         0  
-  4.         2          m         0         1  
-  5.         2          m         0         1  
-  6.         2          f         1         0  
-  7.         3          m         0         1  
-  8.         3          f         1         0  
-  9.         3          m         0         1  
-</code></pre><p>Then the collapse command as used below produces the following result.</p>
-<pre tabindex="0"><code class="language-stata" data-lang="stata">collapse (count) numkids=famid (sum) girls=sexdum1 boys=sexdum2, by(famid) 
-
-list famid boys girls numkids 
-
-         famid      boys     girls    numkids 
-  1.         1         1         2          3  
-  2.         2         2         1          3  
-  3.         3         2         1          3   
-</code></pre><p>Here the collapse function tells to count the total number of observation in the familyid variable and store it in numkids, sum the values in sexdum1 and store it in girls, sum values in sexdum2 and store it in boys &mdash; all this will be done at the level of family as specified by the by command.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          famid        sex   sexdum1   sexdum2 
+</span></span><span class="line"><span class="cl">  1.         1          f         1         0  
+</span></span><span class="line"><span class="cl">  2.         1          m         0         1  
+</span></span><span class="line"><span class="cl">  3.         1          f         1         0  
+</span></span><span class="line"><span class="cl">  4.         2          m         0         1  
+</span></span><span class="line"><span class="cl">  5.         2          m         0         1  
+</span></span><span class="line"><span class="cl">  6.         2          f         1         0  
+</span></span><span class="line"><span class="cl">  7.         3          m         0         1  
+</span></span><span class="line"><span class="cl">  8.         3          f         1         0  
+</span></span><span class="line"><span class="cl">  9.         3          m         0         1  
+</span></span></code></pre></div><p>Then the collapse command as used below produces the following result.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">collapse (count) numkids=famid (sum) girls=sexdum1 boys=sexdum2, by(famid) 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">list famid boys girls numkids 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         famid      boys     girls    numkids 
+</span></span><span class="line"><span class="cl">  1.         1         1         2          3  
+</span></span><span class="line"><span class="cl">  2.         2         2         1          3  
+</span></span><span class="line"><span class="cl">  3.         3         2         1          3   
+</span></span></code></pre></div><p>Here the collapse function tells to count the total number of observation in the familyid variable and store it in numkids, sum the values in sexdum1 and store it in girls, sum values in sexdum2 and store it in boys &mdash; all this will be done at the level of family as specified by the by command.</p>
 
     </div>
 </article>

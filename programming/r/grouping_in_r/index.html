@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Grouping_in_R - Information Set Blog</title>
-    <meta name="description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.
+    <meta name="description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll be using that.
 The syntax is as follows:
 df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:">
     <link rel="canonical" href="http://verma-bipul.github.io/programming/r/grouping_in_r/">
     <meta property="og:title" content="Grouping_in_R">
     <meta property="og:type" content="article">
     <meta property="og:url" content="http://verma-bipul.github.io/programming/r/grouping_in_r/">
-    <meta property="og:description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.
+    <meta property="og:description" content="Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll be using that.
 The syntax is as follows:
 df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:">
     <meta property="og:site_name" content="Information Set Blog">
@@ -65,41 +65,42 @@ df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = fu
         </span>
     </header>
     <div class="post-content" itemprop="articleBody">
-        <p>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll using that.</p>
+        <p>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&rsquo;ll be using that.</p>
 <p>The syntax is as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df_grouped <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(col_names) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#a6e22e">summarize</span>(gr_col_name <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(col_name))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># Given below are a list of functions that be used:</span>
-</span></span><span style="display:flex;"><span>sum
-</span></span><span style="display:flex;"><span>min 
-</span></span><span style="display:flex;"><span>max
-</span></span><span style="display:flex;"><span>mean
-</span></span><span style="display:flex;"><span>sd
-</span></span><span style="display:flex;"><span>IQR
-</span></span><span style="display:flex;"><span>mad
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">quantile</span>(col_name, probs <span style="color:#f92672">=</span> <span style="color:#ae81ff">.9</span>) <span style="color:#75715e">#- finds the 90th percentile for group</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">n</span>()  <span style="color:#75715e">#-counts the number of observations</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">n_distinct</span>(col_name) <span style="color:#75715e">#- counts the number of unique observations</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df_grouped</span> <span class="o">&lt;-</span> <span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">group_by</span><span class="p">(</span><span class="n">col_names</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">                     <span class="nf">summarize</span><span class="p">(</span><span class="n">gr_col_name</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">col_name</span><span class="p">))</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="c1"># Given below are a list of functions that be used:</span>
+</span></span><span class="line"><span class="cl"><span class="n">sum</span>
+</span></span><span class="line"><span class="cl"><span class="n">min</span> 
+</span></span><span class="line"><span class="cl"><span class="n">max</span>
+</span></span><span class="line"><span class="cl"><span class="n">mean</span>
+</span></span><span class="line"><span class="cl"><span class="n">sd</span>
+</span></span><span class="line"><span class="cl"><span class="n">IQR</span>
+</span></span><span class="line"><span class="cl"><span class="n">mad</span>
+</span></span><span class="line"><span class="cl"><span class="nf">quantile</span><span class="p">(</span><span class="n">col_name</span><span class="p">,</span> <span class="n">probs</span> <span class="o">=</span> <span class="m">.9</span><span class="p">)</span> <span class="c1">#- finds the 90th percentile for group</span>
+</span></span><span class="line"><span class="cl"><span class="nf">n</span><span class="p">()</span>  <span class="c1">#-counts the number of observations</span>
+</span></span><span class="line"><span class="cl"><span class="nf">n_distinct</span><span class="p">(</span><span class="n">col_name</span><span class="p">)</span> <span class="c1">#- counts the number of unique observations</span>
 </span></span></code></pre></div><p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>class_mean <span style="color:#f92672">&lt;-</span> scores <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(class_code) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">summarize</span>(mean_score <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(marks)) 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">class_mean</span> <span class="o">&lt;-</span> <span class="n">scores</span> <span class="o">%&gt;%</span> <span class="nf">group_by</span><span class="p">(</span><span class="n">class_code</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">                    <span class="nf">summarize</span><span class="p">(</span><span class="n">mean_score</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">marks</span><span class="p">))</span> 
 </span></span></code></pre></div><h3 id="custom-functions-with-mutate">Custom functions with mutate</h3>
 <p>Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.</p>
+<p>Note: Mutate retains all the rows of the original dataset unlike summarize which keeps only the columns passed into it.</p>
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> (bpm <span style="color:#f92672">-</span> <span style="color:#a6e22e">mean</span>(bpm))^2)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">mutate</span><span class="p">(</span><span class="n">mean_bpm</span> <span class="o">=</span> <span class="p">(</span><span class="n">bpm</span> <span class="o">-</span> <span class="nf">mean</span><span class="p">(</span><span class="n">bpm</span><span class="p">))</span><span class="n">^2</span><span class="p">)</span>
 </span></span></code></pre></div><h3 id="group-and-select">Group and select</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> (bpm <span style="color:#f92672">-</span> <span style="color:#a6e22e">mean</span>(bpm))^2) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">select</span>(genre, mean_bpm)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">mutate</span><span class="p">(</span><span class="n">mean_bpm</span> <span class="o">=</span> <span class="p">(</span><span class="n">bpm</span> <span class="o">-</span> <span class="nf">mean</span><span class="p">(</span><span class="n">bpm</span><span class="p">))</span><span class="n">^2</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">select</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">mean_bpm</span><span class="p">)</span>
 </span></span></code></pre></div><h3 id="ungroup">Ungroup</h3>
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">group_by</span>(genre) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(mean_bpm <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(bpm) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(my_grouped_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(mean_bpm)) <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">mutate</span>(my_regular_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(mean_bpm))
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">group_by</span><span class="p">(</span><span class="n">genre</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">mutate</span><span class="p">(</span><span class="n">mean_bpm</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">bpm</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">mutate</span><span class="p">(</span><span class="n">my_grouped_sum</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">mean_bpm</span><span class="p">))</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">ungroup</span><span class="p">()</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl"> <span class="nf">mutate</span><span class="p">(</span><span class="n">my_regular_sum</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">mean_bpm</span><span class="p">))</span>
 </span></span></code></pre></div><h2 id="reference">Reference</h2>
 <p>
 <a href="https://builtin.com/data-science/grouping-r" target="_blank" rel="nofollow noreferrer noopener">https://builtin.com/data-science/grouping-r</a></p>
@@ -112,6 +113,8 @@ df_grouped &lt;- df %&gt;% group_by(col_names) %&gt;% summarize(gr_col_name = fu
     
     <div class="prev"> <a href="http://verma-bipul.github.io/programming/r/recursively_reduce/">Previous Post</a> </div>
     
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/r/reshaping_data/">Next Post</a> </div>
     
 </div>
 

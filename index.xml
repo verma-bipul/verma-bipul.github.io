@@ -8,12 +8,34 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Reshaping_data</title>
+      <link>http://verma-bipul.github.io/programming/r/reshaping_data/</link>
+      <pubDate>Fri, 30 Dec 2022 16:19:00 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/reshaping_data/</guid>
+      <description>Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.
+Syntax:
+pivot_longer(data, cols, names_to =&amp;#34;name&amp;#34;, values_to = &amp;#34;values&amp;#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.
+Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.</description>
+    </item>
+    
+    <item>
+      <title>Fellowship_list</title>
+      <link>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</link>
+      <pubDate>Thu, 29 Dec 2022 14:40:27 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</guid>
+      <description>The following is a list of fellowships targeted towards grad students in economics.
+https://sites.google.com/view/elisagiannone/others?authuser=0</description>
+    </item>
+    
+    <item>
       <title>Grouping_in_R</title>
       <link>http://verma-bipul.github.io/programming/r/grouping_in_r/</link>
       <pubDate>Tue, 27 Dec 2022 14:56:17 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/grouping_in_r/</guid>
-      <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll using that.
+      <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll be using that.
 The syntax is as follows:
 df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:</description>
     </item>
@@ -217,7 +239,7 @@ The only thing more dangerous than ignorance is arrogance.</description>
     </item>
     
     <item>
-      <title>R_basic_data_analysis</title>
+      <title>Basic_data_analysis</title>
       <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
       <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
       
