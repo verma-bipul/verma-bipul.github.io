@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2023-01-01T18:48:17 CST">
+<meta name="revised" content="2023-01-02T15:54:26 CST">
 <title>R_plots :: Information Set Blog</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -43,6 +43,28 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
+    <li data-nav-id="/random/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/random/">Random</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/random/us_geo_division/" class="dd-item">
+        <div>
+          <a href="/random/us_geo_division/">
+            US Geographical Division by Authority
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/random/quotes/" class="dd-item">
+        <div>
+          <a href="/random/quotes/">
+            Quotes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
     <li data-nav-id="/acad/" class="dd-item haschildren
         ">
       <div>
@@ -125,28 +147,6 @@
         <div>
           <a href="/datasets/acs/">
             American Community Survey
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/random/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/random/">Randoms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/random/us_geo_division/" class="dd-item">
-        <div>
-          <a href="/random/us_geo_division/">
-            US Geographical Division by Authority
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/random/quotes/" class="dd-item">
-        <div>
-          <a href="/random/quotes/">
-            Quotes
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -317,12 +317,12 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
+    <option value="/random/" >
+   Random</option>
     <option value="/acad/" >
    Acads</option>
     <option value="/datasets/" >
    Datasets</option>
-    <option value="/random/" >
-   Randoms</option>
     <option value="/programming/" >
    Programming</option> 
       <option value="/programming/terminal/" >- Terminal</option>
@@ -370,7 +370,15 @@
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">plot</span><span style="color:#111">(</span><span style="color:#111">x_axis_data</span><span style="color:#111">,</span> <span style="color:#111">y_axis_data</span><span style="color:#111">,</span> <span style="color:#111">type</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;l&#34;</span><span style="color:#111">,</span> <span style="color:#111">col</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;b&#34;</span><span style="color:#111">,</span>
 </span></span><span style="display:flex;"><span>     <span style="color:#111">xlab</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;label_x&#34;</span><span style="color:#111">,</span> <span style="color:#111">ylab</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;label_y&#34;</span><span style="color:#111">,</span> 
 </span></span><span style="display:flex;"><span>     <span style="color:#111">xlim</span><span style="color:#f92672">=</span><span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">),</span> <span style="color:#111">ylim</span><span style="color:#f92672">=</span><span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#ae81ff">-10</span><span style="color:#111">,</span> <span style="color:#ae81ff">20</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75af00">title</span><span style="color:#111">(</span><span style="color:#111">main</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;TITLE&#34;</span><span style="color:#111">,</span> <span style="color:#111">sub</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;subtile&#34;</span><span style="color:#111">)</span>
+</span></span></code></pre></div><p>In addition, labels can be added to a scatter plot in R using the following commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">plot</span><span style="color:#111">(</span><span style="color:#111">x_axis_data</span><span style="color:#111">,</span> <span style="color:#111">y_axis_data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">text</span><span style="color:#111">(</span><span style="color:#111">x_axis_data</span><span style="color:#111">,</span> <span style="color:#111">y_axis_data</span><span style="color:#111">,</span> <span style="color:#111">labels</span><span style="color:#f92672">=</span> <span style="color:#111">names_vec</span><span style="color:#111">)</span> 
+</span></span></code></pre></div><p>In order to fit a line through the scatter plot we can use abline commands, which adds lines to the existing plots</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">plot</span><span style="color:#111">(</span><span style="color:#111">x_axis_data</span><span style="color:#111">,</span> <span style="color:#111">y_axis_data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">abline</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">)</span>  <span style="color:#75715e"># here a is the intercept while b is the slope for equation of line y ~ a + bx</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">abline</span><span style="color:#111">(</span><span style="color:#75af00">lm</span><span style="color:#111">(</span><span style="color:#111">y_axis_data</span> <span style="color:#f92672">~</span> <span style="color:#111">x_axis_data</span><span style="color:#111">))</span> <span style="color:#75715e"># this fits a linear regression line through the scatter-plot.</span>
 </span></span></code></pre></div><h3 id="gg-plots">GG Plots</h3>
 
 
@@ -406,7 +414,8 @@
 
 
   
-    Create a content/_footer.md file to customize the footer content
+    <p>The smallest deed is better than the greatest intention.</p>
+
   
 
 

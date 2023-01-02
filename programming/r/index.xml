@@ -13,10 +13,10 @@
       <pubDate>Fri, 30 Dec 2022 16:19:00 -0600</pubDate>
       
       <guid>/programming/r/reshaping_data/</guid>
-      <description>Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.
+      <description>Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.
+Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.
 Syntax:
-pivot_longer(data, cols, names_to =&amp;#34;name&amp;#34;, values_to = &amp;#34;values&amp;#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.
-Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.</description>
+pivot_longer(data, cols, names_to =&amp;#34;name&amp;#34;, values_to = &amp;#34;values&amp;#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.</description>
     </item>
     
     <item>
@@ -26,8 +26,9 @@ Reshaping is most easily accomplished using the tidyr package in R. Below are th
       
       <guid>/programming/r/grouping_in_r/</guid>
       <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll be using that.
+Note: Grouping alters the nature of dataframe. It is advisable to use the as.data.frame() command at the end.
 The syntax is as follows:
-df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:</description>
+df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .</description>
     </item>
     
     <item>
@@ -82,7 +83,8 @@ sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with l
       
       <guid>/programming/r/r_plots/</guid>
       <description>R Plots We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
-plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) GG Plots </description>
+plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) In addition, labels can be added to a scatter plot in R using the following commands.
+plot(x_axis_data, y_axis_data) text(x_axis_data, y_axis_data, labels= names_vec) In order to fit a line through the scatter plot we can use abline commands, which adds lines to the existing plots</description>
     </item>
     
     <item>

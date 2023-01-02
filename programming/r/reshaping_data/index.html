@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2023-01-01T18:48:17 CST">
+<meta name="revised" content="2023-01-02T15:54:26 CST">
 <title>Reshaping_data :: Information Set Blog</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -43,6 +43,28 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
+    <li data-nav-id="/random/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/random/">Random</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/random/us_geo_division/" class="dd-item">
+        <div>
+          <a href="/random/us_geo_division/">
+            US Geographical Division by Authority
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/random/quotes/" class="dd-item">
+        <div>
+          <a href="/random/quotes/">
+            Quotes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
     <li data-nav-id="/acad/" class="dd-item haschildren
         ">
       <div>
@@ -125,28 +147,6 @@
         <div>
           <a href="/datasets/acs/">
             American Community Survey
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/random/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/random/">Randoms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/random/us_geo_division/" class="dd-item">
-        <div>
-          <a href="/random/us_geo_division/">
-            US Geographical Division by Authority
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/random/quotes/" class="dd-item">
-        <div>
-          <a href="/random/quotes/">
-            Quotes
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -317,12 +317,12 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
+    <option value="/random/" >
+   Random</option>
     <option value="/acad/" >
    Acads</option>
     <option value="/datasets/" >
    Datasets</option>
-    <option value="/random/" >
-   Randoms</option>
     <option value="/programming/" >
    Programming</option> 
       <option value="/programming/terminal/" >- Terminal</option>
@@ -365,15 +365,17 @@
     
     
     
-    <h2 id="pivot-longer">Pivot Longer</h2>
+    <p>Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.</p>
+<p><img src="https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/tidyr.png" alt=""></p>
+<h2 id="pivot-longer">Pivot Longer</h2>
 <p>This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.</p>
 <p>Syntax:</p>
 <pre tabindex="0"><code>pivot_longer(data, cols, names_to =&#34;name&#34;, values_to = &#34;values&#34;)
 </code></pre><h2 id="pivot-wider">Pivot Wider</h2>
 <p>This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.</p>
-<p>Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.</p>
-<p><img src="tidyr_0.png" alt="Fig 1">
-<img src="tidyr_1.png" alt="Fig 2"></p>
+<p>Syntax:</p>
+<pre tabindex="0"><code>pivot_wider(data, cols, names_from =&#34;name&#34;, values_from = &#34;values&#34;)
+</code></pre><p>Here names_from refers to the column from which the new column names will be taken, while values_from refers to the column name from which the values will be taken.</p>
 
 
     
@@ -408,7 +410,8 @@
 
 
   
-    Create a content/_footer.md file to customize the footer content
+    <p>The smallest deed is better than the greatest intention.</p>
+
   
 
 

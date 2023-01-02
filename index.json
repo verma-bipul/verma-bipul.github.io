@@ -4,14 +4,28 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "Welcome! This website is dedicated to any reader who may find the content here useful.\n"
+	"content": "Welcome! In the spirit of knowledge sharing, this website is dedicated to any reader who may find the content here useful.\nContents are organized in a directory structure which can be accessed on the left sidebar.\n"
+},
+{
+	"uri": "/random/",
+	"title": "Random",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains posts which I couldn\u0026rsquo;t categorize well.\n"
+},
+{
+	"uri": "/_footer/",
+	"title": "_Footer",
+	"tags": [],
+	"description": "",
+	"content": "The smallest deed is better than the greatest intention.\n"
 },
 {
 	"uri": "/programming/r/reshaping_data/",
 	"title": "Reshaping_data",
 	"tags": [],
 	"description": "",
-	"content": "Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.\nSyntax:\npivot_longer(data, cols, names_to =\u0026#34;name\u0026#34;, values_to = \u0026#34;values\u0026#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.\nReshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.\n"
+	"content": "Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.\nPivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.\nSyntax:\npivot_longer(data, cols, names_to =\u0026#34;name\u0026#34;, values_to = \u0026#34;values\u0026#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.\nSyntax:\npivot_wider(data, cols, names_from =\u0026#34;name\u0026#34;, values_from = \u0026#34;values\u0026#34;) Here names_from refers to the column from which the new column names will be taken, while values_from refers to the column name from which the values will be taken.\n"
 },
 {
 	"uri": "/acad/",
@@ -39,7 +53,7 @@
 	"title": "Grouping_in_R",
 	"tags": [],
 	"description": "",
-	"content": "Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we\u0026rsquo;ll be using that.\nThe syntax is as follows:\ndf_grouped \u0026lt;- df %\u0026gt;% group_by(col_names) %\u0026gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:\nclass_mean \u0026lt;- scores %\u0026gt;% group_by(class_code) %\u0026gt;% summarize(mean_score = mean(marks)) Custom functions with mutate Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.\nNote: Mutate retains all the rows of the original dataset unlike summarize which keeps only the columns passed into it.\nExample:\ndf %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) Group and select df %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) %\u0026gt;% select(genre, mean_bpm) Ungroup Example:\ndf %\u0026gt;% group_by(genre) %\u0026gt;% mutate(mean_bpm = mean(bpm) %\u0026gt;% mutate(my_grouped_sum = sum(mean_bpm)) %\u0026gt;% ungroup() %\u0026gt;% mutate(my_regular_sum = sum(mean_bpm)) Reference https://builtin.com/data-science/grouping-r\nhttps://www.statology.org/group-summarize-data-r/\n"
+	"content": "Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we\u0026rsquo;ll be using that.\nNote: Grouping alters the nature of dataframe. It is advisable to use the as.data.frame() command at the end.\nThe syntax is as follows:\ndf_grouped \u0026lt;- df %\u0026gt;% group_by(col_names) %\u0026gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:\nclass_mean \u0026lt;- scores %\u0026gt;% group_by(class_code) %\u0026gt;% summarize(mean_score = mean(marks)) Custom functions with mutate Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.\nNote: Mutate retains all the rows of the original dataset unlike summarize which keeps only the columns passed into it.\nExample:\ndf %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) Group and select df %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) %\u0026gt;% select(genre, mean_bpm) Ungroup Example:\ndf %\u0026gt;% group_by(genre) %\u0026gt;% mutate(mean_bpm = mean(bpm) %\u0026gt;% mutate(my_grouped_sum = sum(mean_bpm)) %\u0026gt;% ungroup() %\u0026gt;% mutate(my_regular_sum = sum(mean_bpm)) Reference https://builtin.com/data-science/grouping-r\nhttps://www.statology.org/group-summarize-data-r/\n"
 },
 {
 	"uri": "/datasets/wrds/",
@@ -130,14 +144,7 @@
 	"title": "R_plots",
 	"tags": [],
 	"description": "",
-	"content": "R Plots We\u0026rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.\nplot(x_axis_data, y_axis_data, type=\u0026#34;l\u0026#34;, col=\u0026#34;b\u0026#34;, xlab=\u0026#34;label_x\u0026#34;, ylab=\u0026#34;label_y\u0026#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=\u0026#34;TITLE\u0026#34;, sub=\u0026#34;subtile\u0026#34;) GG Plots "
-},
-{
-	"uri": "/random/",
-	"title": "Randoms",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": "R Plots We\u0026rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.\nplot(x_axis_data, y_axis_data, type=\u0026#34;l\u0026#34;, col=\u0026#34;b\u0026#34;, xlab=\u0026#34;label_x\u0026#34;, ylab=\u0026#34;label_y\u0026#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=\u0026#34;TITLE\u0026#34;, sub=\u0026#34;subtile\u0026#34;) In addition, labels can be added to a scatter plot in R using the following commands.\nplot(x_axis_data, y_axis_data) text(x_axis_data, y_axis_data, labels= names_vec) In order to fit a line through the scatter plot we can use abline commands, which adds lines to the existing plots\nplot(x_axis_data, y_axis_data) abline(a, b) # here a is the intercept while b is the slope for equation of line y ~ a + bx abline(lm(y_axis_data ~ x_axis_data)) # this fits a linear regression line through the scatter-plot. GG Plots "
 },
 {
 	"uri": "/random/us_geo_division/",
@@ -179,7 +186,7 @@
 	"title": "Quotes",
 	"tags": [],
 	"description": "",
-	"content": "“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf\nPoor people need more money, not self-help tricks.\nThe smallest deed is better than the greatest intention.\nQuotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.\nThe only thing more dangerous than ignorance is arrogance.\nTry not to become a man of success but rather a man of value.\nThe search for truth is more important than its possession.\nQuotes by Strangers A good theory is hard to escape.\nAs long as there are minds to reason there will be a never ending sequence of questions- what is it that is true? why is something true? why is something not true? is something universally true? why?\nEnjoy the postponement of enjoyment to the constantly postponed future.\nTotal people on earth \u0026raquo; Total books on earth.\nLook for the win-wins in life.\n"
+	"content": "\u0026ldquo;The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.\u0026rdquo; - Ellen Johnson Sirleaf\nPoor people need more money, not self-help tricks.\nThe smallest deed is better than the greatest intention.\n\u0026ldquo;Not all battles are fought for victory, some are fought simply to tell the world that someone was there on the battlefield.\u0026rdquo; - Ravish Kumar\n“The secret to getting ahead is getting started.”— Mark Twain\nQuotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.\nThe only thing more dangerous than ignorance is arrogance.\nTry not to become a man of success but rather a man of value.\nThe search for truth is more important than its possession.\nQuotes by Strangers A good theory is hard to escape.\nAs long as there are minds to reason there will be a never ending sequence of questions- what is it that is true? why is something true? why is something not true? is something universally true? why?\nEnjoy the postponement of enjoyment to the constantly postponed future.\nTotal people on earth \u0026raquo; Total books on earth.\nLook for the win-wins in life.\n"
 },
 {
 	"uri": "/programming/r/r_basic_data_analysis/",
@@ -235,7 +242,7 @@
 	"title": "Programming",
 	"tags": [],
 	"description": "",
-	"content": "Welcome! This website is dedicated to any reader who may find the content here useful.\n"
+	"content": "This directory contains some very basic tutorials on programming languages that would come handy for data analysis.\n"
 },
 {
 	"uri": "/programming/r/",
