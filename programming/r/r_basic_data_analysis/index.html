@@ -1,122 +1,477 @@
 <!DOCTYPE html>
-<html lang=en-us><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Basic_data_analysis - Information Set Blog</title>
-    <meta name="description" content="Loading Dataset dataset_name &lt;- read_dta(&#34;./family_data.dta&#34;) # read stata dta requires library(haven) df&lt;-read.csv(&#34;path&#34;, header = T, sep = &#34;,&#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Saving Dataset save(df, &#34;path/file_name.Rda&#34;) # to save in Rda format write_dta(df, &#34;path/file_name.dta&#34;) # to save in stata dta format, requires library(haven) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.">
-    <link rel="canonical" href="http://verma-bipul.github.io/programming/r/r_basic_data_analysis/">
-    <meta property="og:title" content="Basic_data_analysis">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://verma-bipul.github.io/programming/r/r_basic_data_analysis/">
-    <meta property="og:description" content="Loading Dataset dataset_name &lt;- read_dta(&#34;./family_data.dta&#34;) # read stata dta requires library(haven) df&lt;-read.csv(&#34;path&#34;, header = T, sep = &#34;,&#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Saving Dataset save(df, &#34;path/file_name.Rda&#34;) # to save in Rda format write_dta(df, &#34;path/file_name.dta&#34;) # to save in stata dta format, requires library(haven) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.">
-    <meta property="og:site_name" content="Information Set Blog">
-    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
-    <meta name="generator" content="Hugo 0.108.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<html>
+  <head>
+    <title>DocDock Documentation</title>
     
-</head>
-<body><header class="site-header">
-    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
-    <span itemprop="name">Index of ~</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
-    <span itemprop="name">programming</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/">
-    <span itemprop="name">r</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item active hidden" aria-current="page"
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/r_basic_data_analysis/">
-    <span itemprop="name">r_basic_data_analysis</span>
-  </a>
-  <meta itemprop="position" content="1" />
-</li></ol>
-    </nav>
-    <h1 class="site-title hidden">
-		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
-    </h1>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-01-01T18:28:19 CST">
+<title>Basic_data_analysis :: DocDock Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/programming/r/r_basic_data_analysis/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">DocDock Documentation</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
-<main id="content">
-<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">        
-        <h2 class="post-title" itemprop="name headline">Basic_data_analysis</h2>
-        <span class="post-meta">
-            <time class="date-published" datetime="2022-09-04T17:47:22&#43;07:00" itemprop="datePublished">
-                Sun, 4 Sep 2022
-            </time>
-            
-        </span>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-        <h2 id="loading-dataset">Loading Dataset</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">dataset_name</span> <span class="o">&lt;-</span> <span class="nf">read_dta</span><span class="p">(</span><span class="s">&#34;./family_data.dta&#34;</span><span class="p">)</span> <span class="c1"># read stata dta requires library(haven)</span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">&lt;-</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&#34;path&#34;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">T</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#34;,&#34;</span><span class="p">,</span> <span class="n">skip</span> <span class="o">=</span> <span class="m">0</span><span class="p">)</span> <span class="c1"># read csv, include 1st row as column names, skip 0 rows.</span>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/acad/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/">Acads</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/acad/fellowships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/fellowships/">Fellowships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/acad/fellowships/fellowship_list/" class="dd-item">
+        <div>
+          <a href="/acad/fellowships/fellowship_list/">
+            Fellowship_list
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/datasets/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/datasets/">Datasets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/datasets/wrds/" class="dd-item">
+        <div>
+          <a href="/datasets/wrds/">
+            WRDS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_at_umn/" class="dd-item">
+        <div>
+          <a href="/datasets/data_at_umn/">
+            Data_at_umn
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/patents_and_innovation/" class="dd-item">
+        <div>
+          <a href="/datasets/patents_and_innovation/">
+            Patents_and_innovation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_aggregators/" class="dd-item">
+        <div>
+          <a href="/datasets/data_aggregators/">
+            Data_aggregators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/lbd/" class="dd-item">
+        <div>
+          <a href="/datasets/lbd/">
+            LBD
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cps/" class="dd-item">
+        <div>
+          <a href="/datasets/cps/">
+            CPS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/comets/" class="dd-item">
+        <div>
+          <a href="/datasets/comets/">
+            Comets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/acs/" class="dd-item">
+        <div>
+          <a href="/datasets/acs/">
+            American Community Survey
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/random/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/random/">Randoms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/random/us_geo_division/" class="dd-item">
+        <div>
+          <a href="/random/us_geo_division/">
+            US Geographical Division by Authority
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/random/quotes/" class="dd-item">
+        <div>
+          <a href="/random/quotes/">
+            Quotes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/terminal/" class="dd-item">
+        <div>
+          <a href="/programming/terminal/">
+            Terminal
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/vim/" class="dd-item">
+        <div>
+          <a href="/programming/vim/">
+            Vim
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/programming/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/git/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/git/git_basics/" class="dd-item">
+        <div>
+          <a href="/programming/git/git_basics/">
+            Git_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/r/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/r/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/r/reshaping_data/" class="dd-item">
+        <div>
+          <a href="/programming/r/reshaping_data/">
+            Reshaping_data
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/grouping_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/grouping_in_r/">
+            Grouping_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/recursively_reduce/" class="dd-item">
+        <div>
+          <a href="/programming/r/recursively_reduce/">
+            Recursively_reduce
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/merging_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/merging_in_r/">
+            Merging_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/apply_fns/" class="dd-item">
+        <div>
+          <a href="/programming/r/apply_fns/">
+            Apply_fns
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/string_man/" class="dd-item">
+        <div>
+          <a href="/programming/r/string_man/">
+            String_man
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_plots/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_plots/">
+            R_plots
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basic_data_analysis/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basic_data_analysis/">
+            Basic_data_analysis
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basics/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basics/">
+            R_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/stata/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/stata/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/stata/loops/" class="dd-item">
+        <div>
+          <a href="/programming/stata/loops/">
+            Loops
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/data_manupulation_stata/" class="dd-item">
+        <div>
+          <a href="/programming/stata/data_manupulation_stata/">
+            Data_manupulation_stata
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/gen_vs_egen/" class="dd-item">
+        <div>
+          <a href="/programming/stata/gen_vs_egen/">
+            Gen_vs_egen
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/stata_basics/" class="dd-item">
+        <div>
+          <a href="/programming/stata/stata_basics/">
+            Stata Basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/programming/creating_website/" class="dd-item">
+        <div>
+          <a href="/programming/creating_website/">
+            Creating Website using Hugo and Github
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/acad/" >
+   Acads</option>
+    <option value="/datasets/" >
+   Datasets</option>
+    <option value="/random/" >
+   Randoms</option>
+    <option value="/programming/" >
+   </option> 
+      <option value="/programming/terminal/" >- Terminal</option>
+      <option value="/programming/vim/" >- Vim</option>
+    <option value="/programming/git/" >
+  - 
+   </option>
+    <option value="/programming/r/" >
+  - 
+   </option> 
+      <option value="/programming/r/reshaping_data/" >-- Reshaping_data</option>
+      <option value="/programming/r/grouping_in_r/" >-- Grouping_in_R</option>
+      <option value="/programming/r/recursively_reduce/" >-- Recursively_reduce</option>
+      <option value="/programming/r/merging_in_r/" >-- Merging_in_R</option>
+      <option value="/programming/r/apply_fns/" >-- Apply_fns</option>
+      <option value="/programming/r/string_man/" >-- String_man</option>
+      <option value="/programming/r/r_plots/" >-- R_plots</option>
+      <option value="/programming/r/r_basic_data_analysis/"  selected>-- Basic_data_analysis</option>
+      <option value="/programming/r/r_basics/" >-- R_basics</option>
+  
+    <option value="/programming/stata/" >
+  - 
+   </option>
+      <option value="/programming/creating_website/" >- Creating Website using Hugo and Github</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>Basic_data_analysis</h1>
+    
+    
+    
+    <h2 id="loading-dataset">Loading Dataset</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#111">dataset_name</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">read_dta</span><span style="color:#111">(</span><span style="color:#d88200">&#34;./family_data.dta&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># read stata dta requires library(haven)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df</span><span style="color:#f92672">&lt;-</span><span style="color:#75af00">read.csv</span><span style="color:#111">(</span><span style="color:#d88200">&#34;path&#34;</span><span style="color:#111">,</span> <span style="color:#111">header</span> <span style="color:#f92672">=</span> <span style="color:#111">T</span><span style="color:#111">,</span> <span style="color:#111">sep</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;,&#34;</span><span style="color:#111">,</span> <span style="color:#111">skip</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#75715e"># read csv, include 1st row as column names, skip 0 rows.</span>
 </span></span></code></pre></div><h2 id="saving-dataset">Saving Dataset</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">save</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s">&#34;path/file_name.Rda&#34;</span><span class="p">)</span> <span class="c1"># to save in Rda format</span>
-</span></span><span class="line"><span class="cl"><span class="nf">write_dta</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s">&#34;path/file_name.dta&#34;</span><span class="p">)</span> <span class="c1"># to save in stata dta format, requires library(haven)</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">save</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;path/file_name.Rda&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># to save in Rda format</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">write_dta</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;path/file_name.dta&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># to save in stata dta format, requires library(haven)</span>
 </span></span></code></pre></div><h2 id="data-exploration">Data Exploration</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">names</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="c1"># gives the list of column names present in the dataset </span>
-</span></span><span class="line"><span class="cl"><span class="nf">colnames</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># gives a few starting values of the all column in the dataset</span>
-</span></span><span class="line"><span class="cl"><span class="nf">dim</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>   <span class="c1"># gives the dimension fo the dataset i.e rows and columns</span>
-</span></span><span class="line"><span class="cl"><span class="nf">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>   <span class="c1"># give the structure of columns in the dataset</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">names</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">)</span> <span style="color:#75715e"># gives the list of column names present in the dataset </span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">colnames</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">head</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">)</span>  <span style="color:#75715e"># gives a few starting values of the all column in the dataset</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">dim</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">)</span>   <span style="color:#75715e"># gives the dimension fo the dataset i.e rows and columns</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">str</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">)</span>   <span style="color:#75715e"># give the structure of columns in the dataset</span>
 </span></span></code></pre></div><h2 id="select-columns">Select Columns</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">subset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">df</span><span class="o">$</span><span class="n">colname</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>  <span class="c1"># This will select columns a and c from the dataset </span>
-</span></span><span class="line"><span class="cl"><span class="nf">subset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="c1"># another way of writing the same thing</span>
-</span></span><span class="line"><span class="cl"><span class="nf">subset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="c1"># this will select all columns except a and c</span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="nf">[c</span><span class="p">(</span><span class="s">&#34;a&#34;</span><span class="p">,</span> <span class="s">&#34;c&#34;</span><span class="p">)</span><span class="n">]</span>  <span class="c1"># select a and c column. Note that we have to write column names as strings in this case unlike when using subset </span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>  <span class="c1"># select columns a and c  # requires library(dplyr)</span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span><span class="o">:</span><span class="n">c</span><span class="p">))</span>  <span class="c1"># select all columns from a to c </span>
-</span></span><span class="line"><span class="cl"><span class="c1"># There are many more selection options available with dplyr library -- look for the manual</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">subset</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">colname</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">))</span>  <span style="color:#75715e"># This will select columns a and c from the dataset </span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">subset</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">select</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">))</span> <span style="color:#75715e"># another way of writing the same thing</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">subset</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">select</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">))</span> <span style="color:#75715e"># this will select all columns except a and c</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df</span><span style="color:#75af00">[c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;c&#34;</span><span style="color:#111">)</span><span style="color:#111">]</span>  <span style="color:#75715e"># select a and c column. Note that we have to write column names as strings in this case unlike when using subset </span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df</span> <span style="color:#f92672">%&gt;%</span> <span style="color:#75af00">select</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">)</span>  <span style="color:#75715e"># select columns a and c  # requires library(dplyr)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df</span> <span style="color:#f92672">%&gt;%</span> <span style="color:#75af00">select</span><span style="color:#111">(</span><span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#f92672">:</span><span style="color:#111">c</span><span style="color:#111">))</span>  <span style="color:#75715e"># select all columns from a to c </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># There are many more selection options available with dplyr library -- look for the manual</span>
 </span></span></code></pre></div><h2 id="rename-columns">Rename Columns</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">rename</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">new_name1</span> <span class="o">=</span> <span class="n">old_name1</span><span class="p">,</span> <span class="n">nn2</span> <span class="o">=</span> <span class="n">on2</span><span class="p">)</span>  <span class="c1"># requires library(dplyr)</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">rename</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">new_name1</span> <span style="color:#f92672">=</span> <span style="color:#111">old_name1</span><span style="color:#111">,</span> <span style="color:#111">nn2</span> <span style="color:#f92672">=</span> <span style="color:#111">on2</span><span style="color:#111">)</span>  <span style="color:#75715e"># requires library(dplyr)</span>
 </span></span></code></pre></div><h2 id="reorder-columns">Reorder Columns</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">,</span> <span class="n">col3</span><span class="p">,</span> <span class="n">col4</span><span class="p">)</span> <span class="c1"># requires library(dplyr) </span>
-</span></span><span class="line"><span class="cl"><span class="c1"># the above selects data in the order of columns as shown above</span>
-</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">select</span><span class="p">(</span><span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">,</span> <span class="nf">everything</span><span class="p">())</span> <span class="c1"># this order col1, col2 and  keeps all the columns same as before. </span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#111">df</span> <span style="color:#f92672">%&gt;%</span> <span style="color:#75af00">select</span><span style="color:#111">(</span><span style="color:#111">col1</span><span style="color:#111">,</span> <span style="color:#111">col2</span><span style="color:#111">,</span> <span style="color:#111">col3</span><span style="color:#111">,</span> <span style="color:#111">col4</span><span style="color:#111">)</span> <span style="color:#75715e"># requires library(dplyr) </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the above selects data in the order of columns as shown above</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df</span> <span style="color:#f92672">%&gt;%</span> <span style="color:#75af00">select</span><span style="color:#111">(</span><span style="color:#111">col1</span><span style="color:#111">,</span> <span style="color:#111">col2</span><span style="color:#111">,</span> <span style="color:#75af00">everything</span><span style="color:#111">())</span> <span style="color:#75715e"># this order col1, col2 and  keeps all the columns same as before. </span>
 </span></span></code></pre></div><h2 id="select-rows">Select Rows</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df</span><span class="nf">[</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">col1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="o">$</span><span class="n">col2</span> <span class="o">!=</span><span class="m">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">df</span><span class="o">$</span><span class="n">col3</span> <span class="o">==</span> <span class="m">10</span><span class="p">,</span>  <span class="n">]</span> <span class="c1"># select rows based on given conditions</span>
-</span></span><span class="line"><span class="cl"><span class="n">df[</span><span class="o">!</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">colname</span> <span class="o">%in%</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;a&#34;</span><span class="p">,</span> <span class="s">&#34;b&#34;</span><span class="p">)),</span> <span class="n">]</span>  <span class="c1"># select rows excluding the ones that have a or c in colname.</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#111">df</span><span style="color:#75af00">[</span><span style="color:#111">(</span><span style="color:#75af00">is.na</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">col1</span><span style="color:#111">)</span> <span style="color:#f92672">&amp;</span> <span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">col2</span> <span style="color:#f92672">!=</span><span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">|</span> <span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">col3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span>  <span style="color:#111">]</span> <span style="color:#75715e"># select rows based on given conditions</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">df[</span><span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">colname</span> <span style="color:#f92672">%in%</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;b&#34;</span><span style="color:#111">)),</span> <span style="color:#111">]</span>  <span style="color:#75715e"># select rows excluding the ones that have a or c in colname.</span>
 </span></span></code></pre></div><h2 id="sort-datasets-based-on-columns">Sort Datasets based on Columns</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="n">df_new</span> <span class="o">&lt;-</span> <span class="n">df</span><span class="nf">[order</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">col1</span><span class="p">,</span><span class="n">df</span><span class="o">$</span><span class="n">col2</span><span class="p">),</span> <span class="n">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#111">df_new</span> <span style="color:#f92672">&lt;-</span> <span style="color:#111">df</span><span style="color:#75af00">[order</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">col1</span><span style="color:#111">,</span><span style="color:#111">df</span><span style="color:#f92672">$</span><span style="color:#111">col2</span><span style="color:#111">),</span> <span style="color:#111">]</span>
 </span></span></code></pre></div><p>This will sort the dataset in ascending order based on col1 and col2. For inverse sorting we just need to use the negative sign.</p>
 <h2 id="counting-in-r">Counting in R</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">vec</span><span class="p">))</span>  <span class="c1"># count the number of unique values</span>
-</span></span><span class="line"><span class="cl"><span class="nf">sum</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">vec</span><span class="p">))</span>    <span class="c1"># count the number of NAs</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">length</span><span style="color:#111">(</span><span style="color:#75af00">unique</span><span style="color:#111">(</span><span style="color:#111">vec</span><span style="color:#111">))</span>  <span style="color:#75715e"># count the number of unique values</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">sum</span><span style="color:#111">(</span><span style="color:#75af00">is.na</span><span style="color:#111">(</span><span style="color:#111">vec</span><span style="color:#111">))</span>    <span style="color:#75715e"># count the number of NAs</span>
 </span></span></code></pre></div><h3 id="reference">Reference</h3>
-<p>
-<a href="https://www.statology.org/reorder-columns-r/" target="_blank" rel="nofollow noreferrer noopener">https://www.statology.org/reorder-columns-r/</a></p>
+<p><a href="https://www.statology.org/reorder-columns-r/">https://www.statology.org/reorder-columns-r/</a></p>
 
-    </div>
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/programming/r/r_plots/" title="R_plots"> <i class="fa fa-chevron-left"></i><label>R_plots</label></a>
+    <a class="nav nav-next" href="/programming/r/r_basics/" title="R_basics" style="margin-right: 0px;"><label>R_basics</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
 </article>
-<div class="pagination">
+
+<footer>
+
+<div class="footline">
     
-    <div class="prev"> <a href="http://verma-bipul.github.io/programming/r/r_basics/">Previous Post</a> </div>
+
     
+
     
-    <div class="next"> <a href="http://verma-bipul.github.io/programming/r/r_plots/">Next Post</a> </div>
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 04/09/2022
+    </div>
     
-</div>
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/programming/r/r_basic_data_analysis.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
 
 
-        </main><footer class="site-footer">
-	<span class="left">Gohugo/0.108.0 </span> 
-	<span class="right">
-		<em>Information Set Blog</em>
-	</span>
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
 </footer>
-</body>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
 </html>

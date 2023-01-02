@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Information Set Blog</title>
-    <link>http://verma-bipul.github.io/</link>
-    <description>Recent content on Information Set Blog</description>
+    <title>DocDock Documentation</title>
+    <link>/</link>
+    <description>Recent content on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reshaping_data</title>
-      <link>http://verma-bipul.github.io/programming/r/reshaping_data/</link>
+      <link>/programming/r/reshaping_data/</link>
       <pubDate>Fri, 30 Dec 2022 16:19:00 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/reshaping_data/</guid>
+      <guid>/programming/r/reshaping_data/</guid>
       <description>Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.
 Syntax:
 pivot_longer(data, cols, names_to =&amp;#34;name&amp;#34;, values_to = &amp;#34;values&amp;#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.
@@ -21,20 +21,20 @@ Reshaping is most easily accomplished using the tidyr package in R. Below are th
     
     <item>
       <title>Fellowship_list</title>
-      <link>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</link>
+      <link>/acad/fellowships/fellowship_list/</link>
       <pubDate>Thu, 29 Dec 2022 14:40:27 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</guid>
+      <guid>/acad/fellowships/fellowship_list/</guid>
       <description>The following is a list of fellowships targeted towards grad students in economics.
 https://sites.google.com/view/elisagiannone/others?authuser=0</description>
     </item>
     
     <item>
       <title>Grouping_in_R</title>
-      <link>http://verma-bipul.github.io/programming/r/grouping_in_r/</link>
+      <link>/programming/r/grouping_in_r/</link>
       <pubDate>Tue, 27 Dec 2022 14:56:17 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/grouping_in_r/</guid>
+      <guid>/programming/r/grouping_in_r/</guid>
       <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll be using that.
 The syntax is as follows:
 df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:</description>
@@ -42,10 +42,10 @@ df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_c
     
     <item>
       <title>WRDS</title>
-      <link>http://verma-bipul.github.io/datasets/wrds/</link>
+      <link>/datasets/wrds/</link>
       <pubDate>Tue, 27 Dec 2022 12:19:40 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/wrds/</guid>
+      <guid>/datasets/wrds/</guid>
       <description>WRDS is the go to database to access all finance related datasets. Navigating through WRDS can be challenging for beginners.
 The first order of business should be to register for WRDS at https://wrds-www.wharton.upenn.edu/ using your university email. Universities usually subscribe to part of the database.
 Next read the guide here: https://libguides.stanford.edu/library/wrds to have an intially idea of which dataset to look for.
@@ -54,10 +54,10 @@ Compustat Compustat contains financial data for all publicly traded firms in US.
     
     <item>
       <title>Data_at_umn</title>
-      <link>http://verma-bipul.github.io/datasets/data_at_umn/</link>
+      <link>/datasets/data_at_umn/</link>
       <pubDate>Sat, 24 Dec 2022 09:37:31 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/data_at_umn/</guid>
+      <guid>/datasets/data_at_umn/</guid>
       <description>University of Minnesota Library also provides access to several datasets. For instance it subscribes to Statista. For a more comprehensive list visit the link below:
 https://libguides.umn.edu/FindResourcesbyFormat/datasets
 There is also a specific section related to economics here:
@@ -69,20 +69,20 @@ One will typically need a research proposal to gain access to restricted-dataset
     
     <item>
       <title>Patents_and_innovation</title>
-      <link>http://verma-bipul.github.io/datasets/patents_and_innovation/</link>
+      <link>/datasets/patents_and_innovation/</link>
       <pubDate>Mon, 19 Dec 2022 14:16:37 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/patents_and_innovation/</guid>
+      <guid>/datasets/patents_and_innovation/</guid>
       <description>https://iiindex.org/datasets
 https://docs.google.com/spreadsheets/d/1bdyhGrj0oNz-_qW3Rv2GNGqhZZ73rgj-DYWePLA_1Ms/edit#gid=1389884911</description>
     </item>
     
     <item>
       <title>Data_aggregators</title>
-      <link>http://verma-bipul.github.io/datasets/data_aggregators/</link>
+      <link>/datasets/data_aggregators/</link>
       <pubDate>Mon, 19 Dec 2022 13:57:03 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/data_aggregators/</guid>
+      <guid>/datasets/data_aggregators/</guid>
       <description>Below is a website that does exactly what I&amp;rsquo;m trying to do - list all the datasets that can be useful for research.
 https://econdata.net/subject-links/ Several of the links in the above website are broken, but still serves as a good guide.
 Here I list website which aggregate and clean data from different places.
@@ -93,20 +93,20 @@ Here I list website which aggregate and clean data from different places.
     
     <item>
       <title>LBD</title>
-      <link>http://verma-bipul.github.io/datasets/lbd/</link>
+      <link>/datasets/lbd/</link>
       <pubDate>Mon, 19 Dec 2022 13:55:02 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/lbd/</guid>
+      <guid>/datasets/lbd/</guid>
       <description>The Longitudinal Business Database (LBD) is restricted use micro data on firms.
 https://www.census.gov/programs-surveys/ces/data/restricted-use-data/longitudinal-business-database.html</description>
     </item>
     
     <item>
       <title>Recursively_reduce</title>
-      <link>http://verma-bipul.github.io/programming/r/recursively_reduce/</link>
+      <link>/programming/r/recursively_reduce/</link>
       <pubDate>Sun, 18 Dec 2022 17:11:38 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/recursively_reduce/</guid>
+      <guid>/programming/r/recursively_reduce/</guid>
       <description>Reduce is a powerful function in R. It applies a function recursively to a list. One simple use of reduce function is to merge large number of datasets in a recursive fashion.
 Reduce usually takes a binary function and a list as its input.
 Example:
@@ -115,10 +115,10 @@ Reduce(intersect, list(a, b, c)) # This is same as the command below intersect((
     
     <item>
       <title>Merging_in_R</title>
-      <link>http://verma-bipul.github.io/programming/r/merging_in_r/</link>
+      <link>/programming/r/merging_in_r/</link>
       <pubDate>Sat, 17 Dec 2022 16:53:48 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/merging_in_r/</guid>
+      <guid>/programming/r/merging_in_r/</guid>
       <description>Merging in R The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
 Inner Join: This means the merged dataset will have the common elements of the two datasets by the column name declared.
 merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common columns in the two datasets # this is a inner join which keeps only the common elements in the two datasets Make sure that one has unique values in the declared column by which merging is to be done.</description>
@@ -126,19 +126,19 @@ merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common 
     
     <item>
       <title>Loops</title>
-      <link>http://verma-bipul.github.io/programming/stata/loops/</link>
+      <link>/programming/stata/loops/</link>
       <pubDate>Tue, 13 Dec 2022 10:03:20 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/stata/loops/</guid>
+      <guid>/programming/stata/loops/</guid>
       <description>For loop in stata Looping through parallel lists local agrp &amp;#34;cat dog cow pig&amp;#34; local bgrp &amp;#34;meow woof moo oinkoink&amp;#34; local n : word count `agrp&amp;#39; forvalues i = 1/`n&amp;#39; { local a : word `i&amp;#39; of `agrp&amp;#39; local b : word `i&amp;#39; of `bgrp&amp;#39; di &amp;#34;`a&amp;#39; says `b&amp;#39;&amp;#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ </description>
     </item>
     
     <item>
       <title>Apply_fns</title>
-      <link>http://verma-bipul.github.io/programming/r/apply_fns/</link>
+      <link>/programming/r/apply_fns/</link>
       <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/apply_fns/</guid>
+      <guid>/programming/r/apply_fns/</guid>
       <description>There are different kinds of apply functions:
 apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
 apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/</description>
@@ -146,19 +146,19 @@ apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise ope
     
     <item>
       <title>Terminal</title>
-      <link>http://verma-bipul.github.io/programming/terminal/</link>
+      <link>/programming/terminal/</link>
       <pubDate>Sun, 11 Dec 2022 18:01:16 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/terminal/</guid>
+      <guid>/programming/terminal/</guid>
       <description>Some useful terminal commands mkdir dir_name # Make Directory rm -r dir_name # Recursively remove content of a directory mv file1 dir1/ # move file1 to dir1 wget -O dir/file.ext url # download the file from url and save it in dir with filename file.ext wget url -P dir # download the file from url as save it in dir unzip file.zip #to unzip a file touch file_name.ext # create a new file open -a app_name file_name # open file using a specific application Accessing terminal command history Press Ctrl + R to enter the command history mode.</description>
     </item>
     
     <item>
       <title>String_man</title>
-      <link>http://verma-bipul.github.io/programming/r/string_man/</link>
+      <link>/programming/r/string_man/</link>
       <pubDate>Thu, 08 Dec 2022 19:58:22 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/string_man/</guid>
+      <guid>/programming/r/string_man/</guid>
       <description>String Manipulation in R Paste Function The paste function in R is used to join strings together.
 &amp;gt;paste0(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a1&amp;#34; &amp;#34;a2&amp;#34; &amp;#34;a3&amp;#34; &amp;gt;paste(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a 1&amp;#34; &amp;#34;a 2&amp;#34; &amp;#34;a 3&amp;#34; Sprintf Function The sprintf function prints strings in a specified format. Examples:
 sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with leading zeros sprintf(&amp;#34;%.2f&amp;#34;, 15.45678) # &amp;#34;15.49&amp;#34; - prints upto two decimal places </description>
@@ -166,20 +166,20 @@ sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with l
     
     <item>
       <title>R_plots</title>
-      <link>http://verma-bipul.github.io/programming/r/r_plots/</link>
+      <link>/programming/r/r_plots/</link>
       <pubDate>Sat, 03 Dec 2022 10:40:09 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_plots/</guid>
+      <guid>/programming/r/r_plots/</guid>
       <description>R Plots We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
 plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) GG Plots </description>
     </item>
     
     <item>
       <title>US Geographical Division by Authority</title>
-      <link>http://verma-bipul.github.io/random/us_geo_division/</link>
+      <link>/random/us_geo_division/</link>
       <pubDate>Sat, 03 Dec 2022 06:10:48 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/random/us_geo_division/</guid>
+      <guid>/random/us_geo_division/</guid>
       <description>Different US authorities divides US into different regions. Here is a list of number of regions that the entire US is divided into by name of authority.
 Table: Total number of divisions by authority1
 Authority Number of regions Region Names US Census Bureau 4 NE; MW; S; W Federal Reserve System 12 see here Time Zones 4 (+2) Eastern; Central; Mountain; Pacific (+Alaska; Hawaii) Federal Court System 13 see here BEA Regions 8 New Eng; ME; SE; Great Lakes; Plains; SW; Rocky Mountains; Far W Petroleum Administration of Defence Districts (PADD) 5 E Coast; W Coast; Gulf Coast; MW; Rocky Mountains Reference: https://www.</description>
@@ -187,50 +187,50 @@ Authority Number of regions Region Names US Census Bureau 4 NE; MW; S; W Federal
     
     <item>
       <title>Vim</title>
-      <link>http://verma-bipul.github.io/programming/vim/</link>
+      <link>/programming/vim/</link>
       <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/vim/</guid>
+      <guid>/programming/vim/</guid>
       <description>CAUTION It is strictly advised not to use vim if one is not a pro programmer. One is most likely to waste a lot of time doing simple stuffs on vim. This guide is meant as a basic starting point to browse through files, make some small changes using terminal and vim. For programming the best IDE in my opinion is VS Code.
 Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard.</description>
     </item>
     
     <item>
       <title>CPS</title>
-      <link>http://verma-bipul.github.io/datasets/cps/</link>
+      <link>/datasets/cps/</link>
       <pubDate>Sun, 06 Nov 2022 19:08:41 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/cps/</guid>
+      <guid>/datasets/cps/</guid>
       <description>The Current Population Survey (CPS)
 The Annual Social and Economic Supplement (ASEC) to the CPS contains data regarding labor market.</description>
     </item>
     
     <item>
       <title>Comets</title>
-      <link>http://verma-bipul.github.io/datasets/comets/</link>
+      <link>/datasets/comets/</link>
       <pubDate>Sun, 06 Nov 2022 15:07:41 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/comets/</guid>
+      <guid>/datasets/comets/</guid>
       <description>The Connecting Outcome Measures in Entrepreneurship, Technology, and Science (COMETS) database primarily contains patents data and linking it to several other variables.
 Data Source https://www.kauffman.org/entrepreneurship/research/comets/ </description>
     </item>
     
     <item>
       <title>American Community Survey</title>
-      <link>http://verma-bipul.github.io/datasets/acs/</link>
+      <link>/datasets/acs/</link>
       <pubDate>Thu, 03 Nov 2022 12:10:09 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/datasets/acs/</guid>
+      <guid>/datasets/acs/</guid>
       <description>Type: Public Use MicroData
 The American Community Survey (ACS) data on at household and individual level on variables related to demographics and income.</description>
     </item>
     
     <item>
       <title>Quotes</title>
-      <link>http://verma-bipul.github.io/random/quotes/</link>
+      <link>/random/quotes/</link>
       <pubDate>Sat, 29 Oct 2022 10:41:57 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/random/quotes/</guid>
+      <guid>/random/quotes/</guid>
       <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
 Poor people need more money, not self-help tricks.
 The smallest deed is better than the greatest intention.
@@ -240,19 +240,19 @@ The only thing more dangerous than ignorance is arrogance.</description>
     
     <item>
       <title>Basic_data_analysis</title>
-      <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
+      <link>/programming/r/r_basic_data_analysis/</link>
       <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
+      <guid>/programming/r/r_basic_data_analysis/</guid>
       <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) # read stata dta requires library(haven) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;, header = T, sep = &amp;#34;,&amp;#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Saving Dataset save(df, &amp;#34;path/file_name.Rda&amp;#34;) # to save in Rda format write_dta(df, &amp;#34;path/file_name.dta&amp;#34;) # to save in stata dta format, requires library(haven) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.</description>
     </item>
     
     <item>
       <title>R_basics</title>
-      <link>http://verma-bipul.github.io/programming/r/r_basics/</link>
+      <link>/programming/r/r_basics/</link>
       <pubDate>Sun, 04 Sep 2022 12:16:42 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_basics/</guid>
+      <guid>/programming/r/r_basics/</guid>
       <description>Intro To begin with we first set the working directory of a project. The code to do so is:
 getwd() # This will give the current working directory setwd(&amp;#34;./../dir_path&amp;#34;) # This will set the new working directory. The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.
 install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tidyverse) # to call a package Standard Packages in R tidyverse: This is a package specifically designed for data science.</description>
@@ -260,10 +260,10 @@ install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tid
     
     <item>
       <title>Git_basics</title>
-      <link>http://verma-bipul.github.io/programming/git/git_basics/</link>
+      <link>/programming/git/git_basics/</link>
       <pubDate>Wed, 31 Aug 2022 17:17:36 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/git/git_basics/</guid>
+      <guid>/programming/git/git_basics/</guid>
       <description>Basics of Version Control using Git Git is a platform for version control. If there are a large number of people working on a single project then keeping track of who made what changes when and where becomes very important.
 In my experience the best way to learn git it by demostration.
 Getting a copy of repository on local device We don&amp;rsquo;t want to make changes in the original repository which is there in the cloud (or at remote-location), hence we make a clone (or copy) of the repository and save it locally.</description>
@@ -271,10 +271,10 @@ Getting a copy of repository on local device We don&amp;rsquo;t want to make cha
     
     <item>
       <title>Data_manupulation_stata</title>
-      <link>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</link>
+      <link>/programming/stata/data_manupulation_stata/</link>
       <pubDate>Tue, 30 Aug 2022 20:12:28 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</guid>
+      <guid>/programming/stata/data_manupulation_stata/</guid>
       <description>Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
 TIPS
 The first thing to do is to identify at which level is the data unique.</description>
@@ -282,20 +282,20 @@ The first thing to do is to identify at which level is the data unique.</descrip
     
     <item>
       <title>Gen_vs_egen</title>
-      <link>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</link>
+      <link>/programming/stata/gen_vs_egen/</link>
       <pubDate>Tue, 30 Aug 2022 17:32:59 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</guid>
+      <guid>/programming/stata/gen_vs_egen/</guid>
       <description>I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
 gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.</description>
     </item>
     
     <item>
       <title>Stata Basics</title>
-      <link>http://verma-bipul.github.io/programming/stata/stata_basics/</link>
+      <link>/programming/stata/stata_basics/</link>
       <pubDate>Mon, 29 Aug 2022 16:38:46 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/stata/stata_basics/</guid>
+      <guid>/programming/stata/stata_basics/</guid>
       <description>How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
 To set the working directoty use the command:
 cd &amp;#34;&amp;lt;path to file&amp;gt;&amp;#34; cd &amp;#34;E:\dataset&amp;#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
@@ -304,10 +304,10 @@ global &amp;lt;var_name&amp;gt; &amp;#34;&amp;lt;directory_path_string&amp;gt;&a
     
     <item>
       <title>Creating Website using Hugo and Github</title>
-      <link>http://verma-bipul.github.io/programming/creating_website/</link>
+      <link>/programming/creating_website/</link>
       <pubDate>Fri, 26 Aug 2022 08:45:17 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/creating_website/</guid>
+      <guid>/programming/creating_website/</guid>
       <description>I was long looking for a hugo theme where I could organize my content in a tree directory structure. I finally found the one that I am currently using.
 The theme is named the-roots-home. The link to its gihub repo is https://github.com/rmsubekti/the-roots-home
 In order to learn how to actually publish contents, I used the tutorial here https://www.youtube.com/watch?v=LIFvgrRxdt4

@@ -1,106 +1,458 @@
 <!DOCTYPE html>
-<html lang=en-us><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Loops - Information Set Blog</title>
-    <meta name="description" content="For loop in stata Looping through parallel lists local agrp &#34;cat dog cow pig&#34; local bgrp &#34;meow woof moo oinkoink&#34; local n : word count `agrp&#39; forvalues i = 1/`n&#39; { local a : word `i&#39; of `agrp&#39; local b : word `i&#39; of `bgrp&#39; di &#34;`a&#39; says `b&#39;&#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ ">
-    <link rel="canonical" href="http://verma-bipul.github.io/programming/stata/loops/">
-    <meta property="og:title" content="Loops">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://verma-bipul.github.io/programming/stata/loops/">
-    <meta property="og:description" content="For loop in stata Looping through parallel lists local agrp &#34;cat dog cow pig&#34; local bgrp &#34;meow woof moo oinkoink&#34; local n : word count `agrp&#39; forvalues i = 1/`n&#39; { local a : word `i&#39; of `agrp&#39; local b : word `i&#39; of `bgrp&#39; di &#34;`a&#39; says `b&#39;&#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ ">
-    <meta property="og:site_name" content="Information Set Blog">
-    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
-    <meta name="generator" content="Hugo 0.108.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<html>
+  <head>
+    <title>DocDock Documentation</title>
     
-</head>
-<body><header class="site-header">
-    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
-    <span itemprop="name">Index of ~</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
-    <span itemprop="name">programming</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/">
-    <span itemprop="name">stata</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item active hidden" aria-current="page"
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/loops/">
-    <span itemprop="name">loops</span>
-  </a>
-  <meta itemprop="position" content="1" />
-</li></ol>
-    </nav>
-    <h1 class="site-title hidden">
-		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
-    </h1>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-01-01T18:28:19 CST">
+<title>Loops :: DocDock Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/programming/stata/loops/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">DocDock Documentation</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
-<main id="content">
-<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">        
-        <h2 class="post-title" itemprop="name headline">Loops</h2>
-        <span class="post-meta">
-            <time class="date-published" datetime="2022-12-13T10:03:20&#43;07:00" itemprop="datePublished">
-                Tue, 13 Dec 2022
-            </time>
-            
-        </span>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-        <h2 id="for-loop-in-stata">For loop in stata</h2>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/acad/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/">Acads</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/acad/fellowships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/fellowships/">Fellowships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/acad/fellowships/fellowship_list/" class="dd-item">
+        <div>
+          <a href="/acad/fellowships/fellowship_list/">
+            Fellowship_list
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/datasets/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/datasets/">Datasets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/datasets/wrds/" class="dd-item">
+        <div>
+          <a href="/datasets/wrds/">
+            WRDS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_at_umn/" class="dd-item">
+        <div>
+          <a href="/datasets/data_at_umn/">
+            Data_at_umn
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/patents_and_innovation/" class="dd-item">
+        <div>
+          <a href="/datasets/patents_and_innovation/">
+            Patents_and_innovation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_aggregators/" class="dd-item">
+        <div>
+          <a href="/datasets/data_aggregators/">
+            Data_aggregators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/lbd/" class="dd-item">
+        <div>
+          <a href="/datasets/lbd/">
+            LBD
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cps/" class="dd-item">
+        <div>
+          <a href="/datasets/cps/">
+            CPS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/comets/" class="dd-item">
+        <div>
+          <a href="/datasets/comets/">
+            Comets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/acs/" class="dd-item">
+        <div>
+          <a href="/datasets/acs/">
+            American Community Survey
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/random/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/random/">Randoms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/random/us_geo_division/" class="dd-item">
+        <div>
+          <a href="/random/us_geo_division/">
+            US Geographical Division by Authority
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/random/quotes/" class="dd-item">
+        <div>
+          <a href="/random/quotes/">
+            Quotes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/terminal/" class="dd-item">
+        <div>
+          <a href="/programming/terminal/">
+            Terminal
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/vim/" class="dd-item">
+        <div>
+          <a href="/programming/vim/">
+            Vim
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/programming/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/git/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/git/git_basics/" class="dd-item">
+        <div>
+          <a href="/programming/git/git_basics/">
+            Git_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/r/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/r/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/r/reshaping_data/" class="dd-item">
+        <div>
+          <a href="/programming/r/reshaping_data/">
+            Reshaping_data
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/grouping_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/grouping_in_r/">
+            Grouping_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/recursively_reduce/" class="dd-item">
+        <div>
+          <a href="/programming/r/recursively_reduce/">
+            Recursively_reduce
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/merging_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/merging_in_r/">
+            Merging_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/apply_fns/" class="dd-item">
+        <div>
+          <a href="/programming/r/apply_fns/">
+            Apply_fns
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/string_man/" class="dd-item">
+        <div>
+          <a href="/programming/r/string_man/">
+            String_man
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_plots/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_plots/">
+            R_plots
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basic_data_analysis/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basic_data_analysis/">
+            Basic_data_analysis
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basics/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basics/">
+            R_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/stata/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/stata/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/stata/loops/" class="dd-item">
+        <div>
+          <a href="/programming/stata/loops/">
+            Loops
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/data_manupulation_stata/" class="dd-item">
+        <div>
+          <a href="/programming/stata/data_manupulation_stata/">
+            Data_manupulation_stata
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/gen_vs_egen/" class="dd-item">
+        <div>
+          <a href="/programming/stata/gen_vs_egen/">
+            Gen_vs_egen
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/stata_basics/" class="dd-item">
+        <div>
+          <a href="/programming/stata/stata_basics/">
+            Stata Basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/programming/creating_website/" class="dd-item">
+        <div>
+          <a href="/programming/creating_website/">
+            Creating Website using Hugo and Github
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/acad/" >
+   Acads</option>
+    <option value="/datasets/" >
+   Datasets</option>
+    <option value="/random/" >
+   Randoms</option>
+    <option value="/programming/" >
+   </option> 
+      <option value="/programming/terminal/" >- Terminal</option>
+      <option value="/programming/vim/" >- Vim</option>
+    <option value="/programming/git/" >
+  - 
+   </option>
+    <option value="/programming/r/" >
+  - 
+   </option>
+    <option value="/programming/stata/" >
+  - 
+   </option> 
+      <option value="/programming/stata/loops/"  selected>-- Loops</option>
+      <option value="/programming/stata/data_manupulation_stata/" >-- Data_manupulation_stata</option>
+      <option value="/programming/stata/gen_vs_egen/" >-- Gen_vs_egen</option>
+      <option value="/programming/stata/stata_basics/" >-- Stata Basics</option>
+  
+      <option value="/programming/creating_website/" >- Creating Website using Hugo and Github</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>Loops</h1>
+    
+    
+    
+    <h2 id="for-loop-in-stata">For loop in stata</h2>
 <h2 id="looping-through-parallel-lists">Looping through parallel lists</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">local agrp &#34;cat dog cow pig&#34;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">local bgrp &#34;meow woof moo oinkoink&#34;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">local n : word count `agrp&#39;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">forvalues i = 1/`n&#39; {
-</span></span><span class="line"><span class="cl">    local a : word `i&#39; of `agrp&#39;
-</span></span><span class="line"><span class="cl">  local b : word `i&#39; of `bgrp&#39;
-</span></span><span class="line"><span class="cl">   di &#34;`a&#39; says `b&#39;&#34;
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/// Output
-</span></span><span class="line"><span class="cl">cat says meow
-</span></span><span class="line"><span class="cl">dog says woof
-</span></span><span class="line"><span class="cl">cow says moo
-</span></span><span class="line"><span class="cl">pig says oinkoink
-</span></span></code></pre></div><h3 id="references">References</h3>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">local agrp &#34;cat dog cow pig&#34;
+
+local bgrp &#34;meow woof moo oinkoink&#34;
+
+local n : word count `agrp&#39;
+
+forvalues i = 1/`n&#39; {
+    local a : word `i&#39; of `agrp&#39;
+  local b : word `i&#39; of `bgrp&#39;
+   di &#34;`a&#39; says `b&#39;&#34;
+}
+
+/// Output
+cat says meow
+dog says woof
+cow says moo
+pig says oinkoink
+</code></pre><h3 id="references">References</h3>
 <ol>
-<li>
-<a href="https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/" target="_blank" rel="nofollow noreferrer noopener">https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/</a></li>
+<li><a href="https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/">https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/</a></li>
 </ol>
 
-    </div>
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/programming/stata/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
+    <a class="nav nav-next" href="/programming/stata/data_manupulation_stata/" title="Data_manupulation_stata" style="margin-right: 0px;"><label>Data_manupulation_stata</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
 </article>
-<div class="pagination">
+
+<footer>
+
+<div class="footline">
     
-    <div class="prev"> <a href="http://verma-bipul.github.io/programming/stata/data_manupulation_stata/">Previous Post</a> </div>
+
     
+
     
-</div>
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 13/12/2022
+    </div>
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/programming/stata/loops.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
 
 
-        </main><footer class="site-footer">
-	<span class="left">Gohugo/0.108.0 </span> 
-	<span class="right">
-		<em>Information Set Blog</em>
-	</span>
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
 </footer>
-</body>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
 </html>

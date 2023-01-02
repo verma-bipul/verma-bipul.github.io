@@ -1,71 +1,371 @@
 <!DOCTYPE html>
-<html lang=en-us><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Apply_fns - Information Set Blog</title>
-    <meta name="description" content="There are different kinds of apply functions:
-apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
-apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/">
-    <link rel="canonical" href="http://verma-bipul.github.io/programming/r/apply_fns/">
-    <meta property="og:title" content="Apply_fns">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://verma-bipul.github.io/programming/r/apply_fns/">
-    <meta property="og:description" content="There are different kinds of apply functions:
-apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
-apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/">
-    <meta property="og:site_name" content="Information Set Blog">
-    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
-    <meta name="generator" content="Hugo 0.108.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<html>
+  <head>
+    <title>DocDock Documentation</title>
     
-</head>
-<body><header class="site-header">
-    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
-    <span itemprop="name">Index of ~</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
-    <span itemprop="name">programming</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item  " 
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/">
-    <span itemprop="name">r</span>
-  </a>
-  <meta itemprop="position" content="0" />
-</li>/<li class="breadcrumb-item active hidden" aria-current="page"
-  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/apply_fns/">
-    <span itemprop="name">apply_fns</span>
-  </a>
-  <meta itemprop="position" content="1" />
-</li></ol>
-    </nav>
-    <h1 class="site-title hidden">
-		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
-    </h1>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-01-01T18:28:19 CST">
+<title>Apply_fns :: DocDock Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/programming/r/apply_fns/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">DocDock Documentation</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
 </header>
-<main id="content">
-<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">        
-        <h2 class="post-title" itemprop="name headline">Apply_fns</h2>
-        <span class="post-meta">
-            <time class="date-published" datetime="2022-12-11T21:18:37&#43;07:00" itemprop="datePublished">
-                Sun, 11 Dec 2022
-            </time>
-            
-        </span>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-        <p>There are different kinds of apply functions:</p>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/acad/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/">Acads</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/acad/fellowships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/acad/fellowships/">Fellowships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/acad/fellowships/fellowship_list/" class="dd-item">
+        <div>
+          <a href="/acad/fellowships/fellowship_list/">
+            Fellowship_list
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/datasets/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/datasets/">Datasets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/datasets/wrds/" class="dd-item">
+        <div>
+          <a href="/datasets/wrds/">
+            WRDS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_at_umn/" class="dd-item">
+        <div>
+          <a href="/datasets/data_at_umn/">
+            Data_at_umn
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/patents_and_innovation/" class="dd-item">
+        <div>
+          <a href="/datasets/patents_and_innovation/">
+            Patents_and_innovation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/data_aggregators/" class="dd-item">
+        <div>
+          <a href="/datasets/data_aggregators/">
+            Data_aggregators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/lbd/" class="dd-item">
+        <div>
+          <a href="/datasets/lbd/">
+            LBD
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/cps/" class="dd-item">
+        <div>
+          <a href="/datasets/cps/">
+            CPS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/comets/" class="dd-item">
+        <div>
+          <a href="/datasets/comets/">
+            Comets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/datasets/acs/" class="dd-item">
+        <div>
+          <a href="/datasets/acs/">
+            American Community Survey
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/random/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/random/">Randoms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/random/us_geo_division/" class="dd-item">
+        <div>
+          <a href="/random/us_geo_division/">
+            US Geographical Division by Authority
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/random/quotes/" class="dd-item">
+        <div>
+          <a href="/random/quotes/">
+            Quotes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/terminal/" class="dd-item">
+        <div>
+          <a href="/programming/terminal/">
+            Terminal
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/vim/" class="dd-item">
+        <div>
+          <a href="/programming/vim/">
+            Vim
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="/programming/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/git/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/git/git_basics/" class="dd-item">
+        <div>
+          <a href="/programming/git/git_basics/">
+            Git_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/r/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/r/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/r/reshaping_data/" class="dd-item">
+        <div>
+          <a href="/programming/r/reshaping_data/">
+            Reshaping_data
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/grouping_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/grouping_in_r/">
+            Grouping_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/recursively_reduce/" class="dd-item">
+        <div>
+          <a href="/programming/r/recursively_reduce/">
+            Recursively_reduce
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/merging_in_r/" class="dd-item">
+        <div>
+          <a href="/programming/r/merging_in_r/">
+            Merging_in_R
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/apply_fns/" class="dd-item">
+        <div>
+          <a href="/programming/r/apply_fns/">
+            Apply_fns
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/string_man/" class="dd-item">
+        <div>
+          <a href="/programming/r/string_man/">
+            String_man
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_plots/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_plots/">
+            R_plots
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basic_data_analysis/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basic_data_analysis/">
+            Basic_data_analysis
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/r/r_basics/" class="dd-item">
+        <div>
+          <a href="/programming/r/r_basics/">
+            R_basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/programming/stata/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/programming/stata/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/programming/stata/loops/" class="dd-item">
+        <div>
+          <a href="/programming/stata/loops/">
+            Loops
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/data_manupulation_stata/" class="dd-item">
+        <div>
+          <a href="/programming/stata/data_manupulation_stata/">
+            Data_manupulation_stata
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/gen_vs_egen/" class="dd-item">
+        <div>
+          <a href="/programming/stata/gen_vs_egen/">
+            Gen_vs_egen
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/programming/stata/stata_basics/" class="dd-item">
+        <div>
+          <a href="/programming/stata/stata_basics/">
+            Stata Basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/programming/creating_website/" class="dd-item">
+        <div>
+          <a href="/programming/creating_website/">
+            Creating Website using Hugo and Github
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/acad/" >
+   Acads</option>
+    <option value="/datasets/" >
+   Datasets</option>
+    <option value="/random/" >
+   Randoms</option>
+    <option value="/programming/" >
+   </option> 
+      <option value="/programming/terminal/" >- Terminal</option>
+      <option value="/programming/vim/" >- Vim</option>
+    <option value="/programming/git/" >
+  - 
+   </option>
+    <option value="/programming/r/" >
+  - 
+   </option> 
+      <option value="/programming/r/reshaping_data/" >-- Reshaping_data</option>
+      <option value="/programming/r/grouping_in_r/" >-- Grouping_in_R</option>
+      <option value="/programming/r/recursively_reduce/" >-- Recursively_reduce</option>
+      <option value="/programming/r/merging_in_r/" >-- Merging_in_R</option>
+      <option value="/programming/r/apply_fns/"  selected>-- Apply_fns</option>
+      <option value="/programming/r/string_man/" >-- String_man</option>
+      <option value="/programming/r/r_plots/" >-- R_plots</option>
+      <option value="/programming/r/r_basic_data_analysis/" >-- Basic_data_analysis</option>
+      <option value="/programming/r/r_basics/" >-- R_basics</option>
+  
+    <option value="/programming/stata/" >
+  - 
+   </option>
+      <option value="/programming/creating_website/" >- Creating Website using Hugo and Github</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>Apply_fns</h1>
+    
+    
+    
+    <p>There are different kinds of apply functions:</p>
 <ul>
 <li>apply</li>
 <li>lapply</li>
@@ -77,29 +377,80 @@ apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise ope
 </ul>
 <p>The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.</p>
 <h3 id="apply">apply</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="nf">apply</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">fun</span><span class="p">)</span> <span class="c1"># Row-wise operation</span>
-</span></span><span class="line"><span class="cl"><span class="nf">apply</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">fun</span><span class="p">)</span> <span class="c1"># Column-wise operation</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">apply</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">fun</span><span style="color:#111">)</span> <span style="color:#75715e"># Row-wise operation</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">apply</span><span style="color:#111">(</span><span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">fun</span><span style="color:#111">)</span> <span style="color:#75715e"># Column-wise operation</span>
 </span></span></code></pre></div><h3 id="reference">Reference</h3>
-<p>
-<a href="https://www.datasciencemadesimple.com/apply-function-r/" target="_blank" rel="nofollow noreferrer noopener">https://www.datasciencemadesimple.com/apply-function-r/</a></p>
+<p><a href="https://www.datasciencemadesimple.com/apply-function-r/">https://www.datasciencemadesimple.com/apply-function-r/</a></p>
 
-    </div>
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/programming/r/merging_in_r/" title="Merging_in_R"> <i class="fa fa-chevron-left"></i><label>Merging_in_R</label></a>
+    <a class="nav nav-next" href="/programming/r/string_man/" title="String_man" style="margin-right: 0px;"><label>String_man</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
 </article>
-<div class="pagination">
+
+<footer>
+
+<div class="footline">
     
-    <div class="prev"> <a href="http://verma-bipul.github.io/programming/r/string_man/">Previous Post</a> </div>
+
     
+
     
-    <div class="next"> <a href="http://verma-bipul.github.io/programming/r/merging_in_r/">Next Post</a> </div>
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 11/12/2022
+    </div>
     
-</div>
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/programming/r/apply_fns.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
 
 
-        </main><footer class="site-footer">
-	<span class="left">Gohugo/0.108.0 </span> 
-	<span class="right">
-		<em>Information Set Blog</em>
-	</span>
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
 </footer>
-</body>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
 </html>

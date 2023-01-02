@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Information Set Blog</title>
-    <link>http://verma-bipul.github.io/programming/r/</link>
-    <description>Recent content on Information Set Blog</description>
+    <title>DocDock Documentation</title>
+    <link>/programming/r/</link>
+    <description>Recent content on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="/programming/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reshaping_data</title>
-      <link>http://verma-bipul.github.io/programming/r/reshaping_data/</link>
+      <link>/programming/r/reshaping_data/</link>
       <pubDate>Fri, 30 Dec 2022 16:19:00 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/reshaping_data/</guid>
+      <guid>/programming/r/reshaping_data/</guid>
       <description>Pivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.
 Syntax:
 pivot_longer(data, cols, names_to =&amp;#34;name&amp;#34;, values_to = &amp;#34;values&amp;#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.
@@ -21,10 +21,10 @@ Reshaping is most easily accomplished using the tidyr package in R. Below are th
     
     <item>
       <title>Grouping_in_R</title>
-      <link>http://verma-bipul.github.io/programming/r/grouping_in_r/</link>
+      <link>/programming/r/grouping_in_r/</link>
       <pubDate>Tue, 27 Dec 2022 14:56:17 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/grouping_in_r/</guid>
+      <guid>/programming/r/grouping_in_r/</guid>
       <description>Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we&amp;rsquo;ll be using that.
 The syntax is as follows:
 df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:</description>
@@ -32,10 +32,10 @@ df_grouped &amp;lt;- df %&amp;gt;% group_by(col_names) %&amp;gt;% summarize(gr_c
     
     <item>
       <title>Recursively_reduce</title>
-      <link>http://verma-bipul.github.io/programming/r/recursively_reduce/</link>
+      <link>/programming/r/recursively_reduce/</link>
       <pubDate>Sun, 18 Dec 2022 17:11:38 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/recursively_reduce/</guid>
+      <guid>/programming/r/recursively_reduce/</guid>
       <description>Reduce is a powerful function in R. It applies a function recursively to a list. One simple use of reduce function is to merge large number of datasets in a recursive fashion.
 Reduce usually takes a binary function and a list as its input.
 Example:
@@ -44,10 +44,10 @@ Reduce(intersect, list(a, b, c)) # This is same as the command below intersect((
     
     <item>
       <title>Merging_in_R</title>
-      <link>http://verma-bipul.github.io/programming/r/merging_in_r/</link>
+      <link>/programming/r/merging_in_r/</link>
       <pubDate>Sat, 17 Dec 2022 16:53:48 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/merging_in_r/</guid>
+      <guid>/programming/r/merging_in_r/</guid>
       <description>Merging in R The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
 Inner Join: This means the merged dataset will have the common elements of the two datasets by the column name declared.
 merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common columns in the two datasets # this is a inner join which keeps only the common elements in the two datasets Make sure that one has unique values in the declared column by which merging is to be done.</description>
@@ -55,10 +55,10 @@ merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common 
     
     <item>
       <title>Apply_fns</title>
-      <link>http://verma-bipul.github.io/programming/r/apply_fns/</link>
+      <link>/programming/r/apply_fns/</link>
       <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/apply_fns/</guid>
+      <guid>/programming/r/apply_fns/</guid>
       <description>There are different kinds of apply functions:
 apply lapply sapply mapply vapply rapply tappy The reason that there are so many kinds of apply function in R is that we want to avoid making use of for loop as much as possible. The class of apply functions are more optimized that loops.
 apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation Reference https://www.datasciencemadesimple.com/apply-function-r/</description>
@@ -66,10 +66,10 @@ apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise ope
     
     <item>
       <title>String_man</title>
-      <link>http://verma-bipul.github.io/programming/r/string_man/</link>
+      <link>/programming/r/string_man/</link>
       <pubDate>Thu, 08 Dec 2022 19:58:22 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/string_man/</guid>
+      <guid>/programming/r/string_man/</guid>
       <description>String Manipulation in R Paste Function The paste function in R is used to join strings together.
 &amp;gt;paste0(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a1&amp;#34; &amp;#34;a2&amp;#34; &amp;#34;a3&amp;#34; &amp;gt;paste(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a 1&amp;#34; &amp;#34;a 2&amp;#34; &amp;#34;a 3&amp;#34; Sprintf Function The sprintf function prints strings in a specified format. Examples:
 sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with leading zeros sprintf(&amp;#34;%.2f&amp;#34;, 15.45678) # &amp;#34;15.49&amp;#34; - prints upto two decimal places </description>
@@ -77,29 +77,29 @@ sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with l
     
     <item>
       <title>R_plots</title>
-      <link>http://verma-bipul.github.io/programming/r/r_plots/</link>
+      <link>/programming/r/r_plots/</link>
       <pubDate>Sat, 03 Dec 2022 10:40:09 -0600</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_plots/</guid>
+      <guid>/programming/r/r_plots/</guid>
       <description>R Plots We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
 plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) GG Plots </description>
     </item>
     
     <item>
       <title>Basic_data_analysis</title>
-      <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
+      <link>/programming/r/r_basic_data_analysis/</link>
       <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
+      <guid>/programming/r/r_basic_data_analysis/</guid>
       <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) # read stata dta requires library(haven) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;, header = T, sep = &amp;#34;,&amp;#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Saving Dataset save(df, &amp;#34;path/file_name.Rda&amp;#34;) # to save in Rda format write_dta(df, &amp;#34;path/file_name.dta&amp;#34;) # to save in stata dta format, requires library(haven) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.</description>
     </item>
     
     <item>
       <title>R_basics</title>
-      <link>http://verma-bipul.github.io/programming/r/r_basics/</link>
+      <link>/programming/r/r_basics/</link>
       <pubDate>Sun, 04 Sep 2022 12:16:42 -0500</pubDate>
       
-      <guid>http://verma-bipul.github.io/programming/r/r_basics/</guid>
+      <guid>/programming/r/r_basics/</guid>
       <description>Intro To begin with we first set the working directory of a project. The code to do so is:
 getwd() # This will give the current working directory setwd(&amp;#34;./../dir_path&amp;#34;) # This will set the new working directory. The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.
 install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tidyverse) # to call a package Standard Packages in R tidyverse: This is a package specifically designed for data science.</description>

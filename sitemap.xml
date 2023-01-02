@@ -2,119 +2,119 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://verma-bipul.github.io/programming/r/reshaping_data/</loc>
+    <loc>/</loc>
+    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
+  </url><url>
+    <loc>/programming/r/reshaping_data/</loc>
     <lastmod>2022-12-30T16:19:00-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/acad/</loc>
+    <loc>/acad/</loc>
     <lastmod>2022-12-29T14:40:56-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/acad/fellowships/</loc>
+    <loc>/acad/fellowships/</loc>
     <lastmod>2022-12-29T14:40:56-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/acad/fellowships/fellowship_list/</loc>
+    <loc>/acad/fellowships/fellowship_list/</loc>
     <lastmod>2022-12-29T14:40:27-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/grouping_in_r/</loc>
+    <loc>/programming/r/grouping_in_r/</loc>
     <lastmod>2022-12-27T14:56:17-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/wrds/</loc>
+    <loc>/datasets/wrds/</loc>
     <lastmod>2022-12-27T12:19:40-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/data_at_umn/</loc>
+    <loc>/datasets/data_at_umn/</loc>
     <lastmod>2022-12-24T09:37:31-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/patents_and_innovation/</loc>
+    <loc>/datasets/patents_and_innovation/</loc>
     <lastmod>2022-12-19T14:16:37-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/data_aggregators/</loc>
+    <loc>/datasets/data_aggregators/</loc>
     <lastmod>2022-12-19T13:57:03-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/lbd/</loc>
+    <loc>/datasets/lbd/</loc>
     <lastmod>2022-12-19T13:55:02-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/</loc>
+    <loc>/datasets/</loc>
     <lastmod>2022-12-19T13:54:06-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/recursively_reduce/</loc>
+    <loc>/programming/r/recursively_reduce/</loc>
     <lastmod>2022-12-18T17:11:38-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/merging_in_r/</loc>
+    <loc>/programming/r/merging_in_r/</loc>
     <lastmod>2022-12-17T16:53:48-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/stata/loops/</loc>
+    <loc>/programming/stata/loops/</loc>
     <lastmod>2022-12-13T10:03:20-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/apply_fns/</loc>
+    <loc>/programming/r/apply_fns/</loc>
     <lastmod>2022-12-11T21:18:37-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/terminal/</loc>
+    <loc>/programming/terminal/</loc>
     <lastmod>2022-12-11T18:01:16-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/string_man/</loc>
+    <loc>/programming/r/string_man/</loc>
     <lastmod>2022-12-08T19:58:22-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/r_plots/</loc>
+    <loc>/programming/r/r_plots/</loc>
     <lastmod>2022-12-03T10:40:09-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/random/</loc>
+    <loc>/random/</loc>
     <lastmod>2022-12-03T06:10:48-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/random/us_geo_division/</loc>
+    <loc>/random/us_geo_division/</loc>
     <lastmod>2022-12-03T06:10:48-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/vim/</loc>
+    <loc>/programming/vim/</loc>
     <lastmod>2022-11-16T10:51:27-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/cps/</loc>
+    <loc>/datasets/cps/</loc>
     <lastmod>2022-11-06T19:08:41-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/comets/</loc>
+    <loc>/datasets/comets/</loc>
     <lastmod>2022-11-06T15:07:41-06:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/datasets/acs/</loc>
+    <loc>/datasets/acs/</loc>
     <lastmod>2022-11-03T12:10:09-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/random/quotes/</loc>
+    <loc>/random/quotes/</loc>
     <lastmod>2022-10-29T10:41:57-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</loc>
+    <loc>/programming/r/r_basic_data_analysis/</loc>
     <lastmod>2022-09-04T17:47:22-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/r_basics/</loc>
+    <loc>/programming/r/r_basics/</loc>
     <lastmod>2022-09-04T12:16:42-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/git/git_basics/</loc>
+    <loc>/programming/git/git_basics/</loc>
     <lastmod>2022-08-31T17:17:36-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</loc>
+    <loc>/programming/stata/data_manupulation_stata/</loc>
     <lastmod>2022-08-30T20:12:28-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</loc>
+    <loc>/programming/stata/gen_vs_egen/</loc>
     <lastmod>2022-08-30T17:32:59-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/stata/stata_basics/</loc>
+    <loc>/programming/stata/stata_basics/</loc>
     <lastmod>2022-08-29T16:38:46-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/</loc>
+    <loc>/programming/</loc>
     <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/</loc>
+    <loc>/programming/git/</loc>
     <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/git/</loc>
+    <loc>/programming/r/</loc>
     <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/r/</loc>
+    <loc>/programming/stata/</loc>
     <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/programming/stata/</loc>
-    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
-  </url><url>
-    <loc>http://verma-bipul.github.io/programming/creating_website/</loc>
+    <loc>/programming/creating_website/</loc>
     <lastmod>2022-08-26T08:45:17-05:00</lastmod>
   </url><url>
-    <loc>http://verma-bipul.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://verma-bipul.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
