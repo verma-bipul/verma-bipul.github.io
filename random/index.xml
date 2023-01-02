@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Randoms on DocDock Documentation</title>
+    <title>Randoms on Information Set Blog</title>
     <link>/random/</link>
-    <description>Recent content in Randoms on DocDock Documentation</description>
+    <description>Recent content in Randoms on Information Set Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Dec 2022 06:10:48 -0600</lastBuildDate><atom:link href="/random/index.xml" rel="self" type="application/rss+xml" />

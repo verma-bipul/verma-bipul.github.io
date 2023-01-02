@@ -224,29 +224,29 @@
 	"content": "How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.\nTo set the working directoty use the command:\ncd \u0026#34;\u0026lt;path to file\u0026gt;\u0026#34; cd \u0026#34;E:\\dataset\u0026#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.\nglobal \u0026lt;var_name\u0026gt; \u0026#34;\u0026lt;directory_path_string\u0026gt;\u0026#34; global dataset \u0026#34;E:\\dataset\u0026#34; cd \u0026#34;$dataset\u0026#34; How to load dataset in stata? For this we use the following command.\nuse \u0026#34;\u0026lt;path_to_file\u0026gt;\u0026#34; use \u0026#34;E:\\dataset\\cars.dta\u0026#34; Basic data exploration in stata Once the dataset is laoded in temperory memory one can use the following commands.\ndescribe // gives the number of obervations and a list of variables codebook // gives summary statistics for each of the variable. The execution if this command may be slow if there are a lot of obervation or variables in the dataset. sum \u0026lt;variable_name\u0026gt; // gives the summary statistics for the selected variable list \u0026lt;var_name\u0026gt; // also give brief summary stats for the variables Another useful thing to identify about the dataset is what consititues a unique observation in the dataset.\nHelpful References There are a lot of resources out there to learn stata. Below are links to a few of them which themselves contain further links depending on the specifics.\nhttps://wlm.userweb.mwn.de/Stata/ https://www.stata.com/links/resources-for-learning-stata/ "
 },
 {
-	"uri": "/programming/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "Welcome! This website is dedicated to any reader who may find the content here useful.\n"
-},
-{
 	"uri": "/programming/git/",
-	"title": "",
+	"title": "Git",
 	"tags": [],
 	"description": "",
 	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
 },
 {
+	"uri": "/programming/",
+	"title": "Programming",
+	"tags": [],
+	"description": "",
+	"content": "Welcome! This website is dedicated to any reader who may find the content here useful.\n"
+},
+{
 	"uri": "/programming/r/",
-	"title": "",
+	"title": "R",
 	"tags": [],
 	"description": "",
 	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
 },
 {
 	"uri": "/programming/stata/",
-	"title": "",
+	"title": "Stata",
 	"tags": [],
 	"description": "",
 	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
