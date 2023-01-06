@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Acads on Information Set Blog</title>
+    <title>Acad on Information Set Blog</title>
     <link>/acad/</link>
-    <description>Recent content in Acads on Information Set Blog</description>
+    <description>Recent content in Acad on Information Set Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Dec 2022 14:40:56 -0600</lastBuildDate><atom:link href="/acad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 18:09:59 -0600</lastBuildDate><atom:link href="/acad/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

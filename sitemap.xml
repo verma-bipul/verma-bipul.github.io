@@ -5,6 +5,27 @@
     <loc>/</loc>
     <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
+    <loc>/programming/</loc>
+    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
+  </url><url>
+    <loc>/programming/r/</loc>
+    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
+  </url><url>
+    <loc>/datasets/</loc>
+    <lastmod>2022-12-19T13:54:06-06:00</lastmod>
+  </url><url>
+    <loc>/programming/stata/</loc>
+    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
+  </url><url>
+    <loc>/acad/</loc>
+    <lastmod>2023-01-03T18:09:59-06:00</lastmod>
+  </url><url>
+    <loc>/programming/git/</loc>
+    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
+  </url><url>
+    <loc>/acad/stats/</loc>
+    <lastmod>2023-01-03T18:09:08-06:00</lastmod>
+  </url><url>
     <loc>/random/</loc>
     <lastmod>2023-01-01T21:24:48-06:00</lastmod>
   </url><url>
@@ -13,9 +34,6 @@
   </url><url>
     <loc>/programming/r/reshaping_data/</loc>
     <lastmod>2022-12-30T16:19:00-06:00</lastmod>
-  </url><url>
-    <loc>/acad/</loc>
-    <lastmod>2022-12-29T14:40:56-06:00</lastmod>
   </url><url>
     <loc>/acad/fellowships/</loc>
     <lastmod>2022-12-29T14:40:56-06:00</lastmod>
@@ -40,9 +58,6 @@
   </url><url>
     <loc>/datasets/lbd/</loc>
     <lastmod>2022-12-19T13:55:02-06:00</lastmod>
-  </url><url>
-    <loc>/datasets/</loc>
-    <lastmod>2022-12-19T13:54:06-06:00</lastmod>
   </url><url>
     <loc>/programming/r/recursively_reduce/</loc>
     <lastmod>2022-12-18T17:11:38-06:00</lastmod>
@@ -100,18 +115,6 @@
   </url><url>
     <loc>/programming/stata/stata_basics/</loc>
     <lastmod>2022-08-29T16:38:46-05:00</lastmod>
-  </url><url>
-    <loc>/programming/git/</loc>
-    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
-  </url><url>
-    <loc>/programming/</loc>
-    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
-  </url><url>
-    <loc>/programming/r/</loc>
-    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
-  </url><url>
-    <loc>/programming/stata/</loc>
-    <lastmod>2022-08-26T09:07:20-05:00</lastmod>
   </url><url>
     <loc>/programming/creating_website/</loc>
     <lastmod>2022-08-26T08:45:17-05:00</lastmod>

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-01-06T11:59:49 CST">
-<title>R_basics :: Information Set Blog</title>
+<title>Stats :: Information Set Blog</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 
     
   </head>
-  <body data-url="/programming/r/r_basics/">
+  <body data-url="/acad/stats/">
     
       <header>
   <div class="logo">
@@ -324,34 +324,18 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/programming/" >
-   Programming</option> 
-    <option value="/programming/r/" >
-  - 
-   R</option> 
-      <option value="/programming/r/reshaping_data/" >-- Reshaping_data</option>
-      <option value="/programming/r/grouping_in_r/" >-- Grouping_in_R</option>
-      <option value="/programming/r/recursively_reduce/" >-- Recursively_reduce</option>
-      <option value="/programming/r/merging_in_r/" >-- Merging_in_R</option>
-      <option value="/programming/r/apply_fns/" >-- Apply_fns</option>
-      <option value="/programming/r/string_man/" >-- String_man</option>
-      <option value="/programming/r/r_plots/" >-- R_plots</option>
-      <option value="/programming/r/r_basic_data_analysis/" >-- Basic_data_analysis</option>
-      <option value="/programming/r/r_basics/"  selected>-- R_basics</option>
-  
-    <option value="/programming/stata/" >
-  - 
-   Stata</option>
-    <option value="/programming/git/" >
-  - 
-   Git</option>
-      <option value="/programming/terminal/" >- Terminal</option>
-      <option value="/programming/vim/" >- Vim</option>
-      <option value="/programming/creating_website/" >- Creating Website using Hugo and Github</option>
-  
+   Programming</option>
     <option value="/datasets/" >
    Datasets</option>
     <option value="/acad/" >
-   Acad</option>
+   Acad</option> 
+    <option value="/acad/stats/"  selected>
+  - 
+   Stats</option>
+    <option value="/acad/fellowships/" >
+  - 
+   Fellowships</option>
+  
     <option value="/random/" >
    Random</option>
 
@@ -367,40 +351,21 @@
       </div>
     
 
-    <h1>R_basics</h1>
+    <h1>Stats</h1>
     
     
     
-    <h2 id="intro">Intro</h2>
-<p>To begin with we first set the working directory of a project. The code to do so is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">getwd</span><span style="color:#111">()</span>  <span style="color:#75715e"># This will give the current working directory</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">setwd</span><span style="color:#111">(</span><span style="color:#d88200">&#34;./../dir_path&#34;</span><span style="color:#111">)</span>  <span style="color:#75715e"># This will set the new working directory.</span>
-</span></span></code></pre></div><p>The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">install.packages</span><span style="color:#111">(</span><span style="color:#d88200">&#34;tidyverse&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># to install a package</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">library</span><span style="color:#111">(</span><span style="color:#111">tidyverse</span><span style="color:#111">)</span>  <span style="color:#75715e"># to call a package</span>
-</span></span></code></pre></div><h2 id="standard-packages-in-r">Standard Packages in R</h2>
-<ul>
-<li>tidyverse: This is a package specifically designed for data science.</li>
-<li>haven: This package allows R to read data from other statistical softwares like SAS, SPSS, Stata. Haven comes as a part of tidyverse</li>
-<li>stringr: used for string manipulations</li>
-<li>random: to draw random numbers</li>
-</ul>
-<h2 id="some-useful-commands">Some Useful Commands</h2>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75af00">remove</span><span style="color:#111">(</span><span style="color:#111">obj_name</span><span style="color:#111">)</span>   <span style="color:#75715e"># to remove object from workplace</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">remove</span><span style="color:#111">(</span><span style="color:#111">list</span> <span style="color:#f92672">=</span> <span style="color:#75af00">ls</span><span style="color:#111">())</span> <span style="color:#75715e"># to remove everything from workplace</span>
-</span></span><span style="display:flex;"><span><span style="color:#75af00">source</span><span style="color:#111">(</span><span style="color:#d88200">&#34;file_name.R&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># to run R script from start to end</span>
-</span></span></code></pre></div><h2 id="some-useful-shortcuts">Some Useful Shortcuts</h2>
-<pre tabindex="0"><code>cmd + shift + enter  # to run the entire R script
-cmd + enter   # to run current line
-cmd + shift + c # to comment out selected line
-</code></pre>
+
+<p>This directory contains posts related to statistical concepts.</p>
+
+
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/programming/r/r_basic_data_analysis/" title="Basic_data_analysis"> <i class="fa fa-chevron-left"></i><label>Basic_data_analysis</label></a>
-    <a class="nav nav-next" href="/programming/stata/" title="Stata" style="margin-right: 0px;"><label>Stata</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/acad/" title="Acad"> <i class="fa fa-chevron-left"></i><label>Acad</label></a>
+    <a class="nav nav-next" href="/acad/fellowships/" title="Fellowships" style="margin-right: 0px;"><label>Fellowships</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -415,7 +380,7 @@ cmd + shift + c # to comment out selected line
 
     
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 04/09/2022
+        <i class='fa fa-calendar'></i> Last update on 03/01/2023
     </div>
     
 

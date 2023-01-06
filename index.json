@@ -7,6 +7,55 @@
 	"content": "Welcome! In the spirit of knowledge sharing, this website is dedicated to any reader who may find the content here useful.\nContents are organized in a directory structure which can be accessed on the left sidebar.\n"
 },
 {
+	"uri": "/programming/",
+	"title": "Programming",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains some very basic tutorials on programming languages that would come handy for data analysis.\n"
+},
+{
+	"uri": "/programming/r/",
+	"title": "R",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains posts related to the R language.\n"
+},
+{
+	"uri": "/datasets/",
+	"title": "Datasets",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains information on datasets that can be useful for your research.\n"
+},
+{
+	"uri": "/programming/stata/",
+	"title": "Stata",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains posts related to Stata.\n"
+},
+{
+	"uri": "/acad/",
+	"title": "Acad",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains academic related posts.\n"
+},
+{
+	"uri": "/programming/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": "Git related posts\n"
+},
+{
+	"uri": "/acad/stats/",
+	"title": "Stats",
+	"tags": [],
+	"description": "",
+	"content": "This directory contains posts related to statistical concepts.\n"
+},
+{
 	"uri": "/random/",
 	"title": "Random",
 	"tags": [],
@@ -25,14 +74,7 @@
 	"title": "Reshaping_data",
 	"tags": [],
 	"description": "",
-	"content": "Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.\nPivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.\nSyntax:\npivot_longer(data, cols, names_to =\u0026#34;name\u0026#34;, values_to = \u0026#34;values\u0026#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.\nSyntax:\npivot_wider(data, cols, names_from =\u0026#34;name\u0026#34;, values_from = \u0026#34;values\u0026#34;) Here names_from refers to the column from which the new column names will be taken, while values_from refers to the column name from which the values will be taken.\n"
-},
-{
-	"uri": "/acad/",
-	"title": "Acads",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": "Reshaping is most easily accomplished using the tidyr package in R. Below are the cheetsheets from tidyr page.\nPivot Longer This involves reshaping data from wide to long format. This means that the length of new dataframe will increase vertically as more rows gets added to the dataframe.\nSyntax:\npivot_longer(data, cols, names_to =\u0026#34;name\u0026#34;, values_to = \u0026#34;values\u0026#34;) Pivot Wider This involves reshaping data from long to wide format. This means horizontal expansion by adding new columns.\nSyntax:\npivot_wider(data, cols, names_from =\u0026#34;name\u0026#34;, values_from = \u0026#34;values\u0026#34;) Here names_from refers to the column from which the new column names will be taken, while values_from refers to the column name from which the values will be taken.\nSplit single column into two columns Syntax:\nseparate(df, col_name, sep = \u0026#34;sep_string\u0026#34;, into = c(\u0026#34;new_name1\u0026#34;, \u0026#34;new_name2\u0026#34;), remove = T) # the remove = T tells to drop the old column. "
 },
 {
 	"uri": "/acad/fellowships/",
@@ -53,7 +95,7 @@
 	"title": "Grouping_in_R",
 	"tags": [],
 	"description": "",
-	"content": "Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we\u0026rsquo;ll be using that.\nNote: Grouping alters the nature of dataframe. It is advisable to use the as.data.frame() command at the end.\nThe syntax is as follows:\ndf_grouped \u0026lt;- df %\u0026gt;% group_by(col_names) %\u0026gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:\nclass_mean \u0026lt;- scores %\u0026gt;% group_by(class_code) %\u0026gt;% summarize(mean_score = mean(marks)) Custom functions with mutate Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.\nNote: Mutate retains all the rows of the original dataset unlike summarize which keeps only the columns passed into it.\nExample:\ndf %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) Group and select df %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) %\u0026gt;% select(genre, mean_bpm) Ungroup Example:\ndf %\u0026gt;% group_by(genre) %\u0026gt;% mutate(mean_bpm = mean(bpm) %\u0026gt;% mutate(my_grouped_sum = sum(mean_bpm)) %\u0026gt;% ungroup() %\u0026gt;% mutate(my_regular_sum = sum(mean_bpm)) Reference https://builtin.com/data-science/grouping-r\nhttps://www.statology.org/group-summarize-data-r/\n"
+	"content": "Group would be perhaps one of the most frequently used tools in R. Grouping becomes handy with the dplyr library, so we\u0026rsquo;ll be using that.\nNote: Grouping alters the nature of dataframe. It is advisable to use the as.data.frame() command at the end.\nThe syntax is as follows:\ndf_grouped \u0026lt;- df %\u0026gt;% group_by(col_names) %\u0026gt;% summarize(gr_col_name = function(col_name)) # Given below are a list of functions that be used: sum min max mean sd IQR mad quantile(col_name, probs = .9) #- finds the 90th percentile for group n() #-counts the number of observations n_distinct(col_name) #- counts the number of unique observations Example:\nclass_mean \u0026lt;- scores %\u0026gt;% group_by(class_code) %\u0026gt;% summarize(mean_score = mean(marks)) Custom functions with mutate Instead of using predefined functions as done in the previous case, we can also apply custom functions using the mutate command.\nNote: Mutate retains all the rows of the original dataset unlike summarize which keeps only the columns passed into it.\nExample:\ndf %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) Group and select df %\u0026gt;% mutate(mean_bpm = (bpm - mean(bpm))^2) %\u0026gt;% select(genre, mean_bpm) Ungroup Example:\ndf %\u0026gt;% group_by(genre) %\u0026gt;% mutate(mean_bpm = mean(bpm) %\u0026gt;% mutate(my_grouped_sum = sum(mean_bpm)) %\u0026gt;% ungroup() %\u0026gt;% mutate(my_regular_sum = sum(mean_bpm)) Grouping with Sort Suppose we want to sort the data for a column for each group. This can be accomplished by using the group_by and arrange commands in conjunction.\nExample:\nlibrary(dplyr) #arrange rows in ascending order based on col2, grouped by col1 df %\u0026gt;% group_by(col1) %\u0026gt;% arrange(col2, .by_group=TRUE) #arrange rows in descending order based on col2, grouped by col1 df %\u0026gt;% group_by(col1) %\u0026gt;% arrange(desc(col2), .by_group=TRUE) Reference https://builtin.com/data-science/grouping-r\nhttps://www.statology.org/group-summarize-data-r/\nhttps://www.statology.org/dplyr-arrange-by-group/\n"
 },
 {
 	"uri": "/datasets/wrds/",
@@ -67,7 +109,7 @@
 	"title": "Data_at_umn",
 	"tags": [],
 	"description": "",
-	"content": "University of Minnesota Library also provides access to several datasets. For instance it subscribes to Statista. For a more comprehensive list visit the link below:\nhttps://libguides.umn.edu/FindResourcesbyFormat/datasets\nThere is also a specific section related to economics here:\nhttps://libguides.umn.edu/econdata\nIn addition, if one needs access to restricted-use datasets, one can contact the FSRDC at Minnesota. Here is their webpage:\nhttps://mnrdc.umn.edu/\nOne will typically need a research proposal to gain access to restricted-datasets.\nThe government recently launched a website to smoothen the process of getting access to restricted data. Visit the following website:\nhttps://www.researchdatagov.org/\nOne can read the eligibility requirement here: https://manager.researchdatagov.org/RDG_User_Guide.pdf\n"
+	"content": "University of Minnesota Library also provides access to several datasets. For instance it subscribes to Statista. For a more comprehensive list visit the link below: https://libguides.umn.edu/FindResourcesbyFormat/datasets\nThere is also a specific section related to economics here: https://libguides.umn.edu/econdata\nA full list of databases that be accessed by UMN Library can be found here: https://libguides.umn.edu/az.php?q=\nIn addition, if one needs access to restricted-use datasets, one can contact the FSRDC at Minnesota. Here is their webpage:\nhttps://mnrdc.umn.edu/\nOne will typically need a research proposal to gain access to restricted-datasets.\nThe US government recently launched a website to smoothen the process of getting access to restricted data. Visit the following website:\nhttps://www.researchdatagov.org/\nOne can read the eligibility requirement here: https://manager.researchdatagov.org/RDG_User_Guide.pdf\n"
 },
 {
 	"uri": "/datasets/patents_and_innovation/",
@@ -89,13 +131,6 @@
 	"tags": [],
 	"description": "",
 	"content": "The Longitudinal Business Database (LBD) is restricted use micro data on firms.\nhttps://www.census.gov/programs-surveys/ces/data/restricted-use-data/longitudinal-business-database.html\n"
-},
-{
-	"uri": "/datasets/",
-	"title": "Datasets",
-	"tags": [],
-	"description": "",
-	"content": "This directory contains information on datasets that can be useful for your research.\n"
 },
 {
 	"uri": "/programming/r/recursively_reduce/",
@@ -144,7 +179,7 @@
 	"title": "R_plots",
 	"tags": [],
 	"description": "",
-	"content": "R Plots We\u0026rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.\nplot(x_axis_data, y_axis_data, type=\u0026#34;l\u0026#34;, col=\u0026#34;b\u0026#34;, xlab=\u0026#34;label_x\u0026#34;, ylab=\u0026#34;label_y\u0026#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=\u0026#34;TITLE\u0026#34;, sub=\u0026#34;subtile\u0026#34;) In addition, labels can be added to a scatter plot in R using the following commands.\nplot(x_axis_data, y_axis_data) text(x_axis_data, y_axis_data, labels= names_vec) In order to fit a line through the scatter plot we can use abline commands, which adds lines to the existing plots\nplot(x_axis_data, y_axis_data) abline(a, b) # here a is the intercept while b is the slope for equation of line y ~ a + bx abline(lm(y_axis_data ~ x_axis_data)) # this fits a linear regression line through the scatter-plot. GG Plots "
+	"content": "R Plots We\u0026rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.\nplot(x_axis_data, y_axis_data, type=\u0026#34;l\u0026#34;, col=\u0026#34;b\u0026#34;, xlab=\u0026#34;label_x\u0026#34;, ylab=\u0026#34;label_y\u0026#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=\u0026#34;TITLE\u0026#34;, sub=\u0026#34;subtile\u0026#34;) In addition, labels can be added to a scatter plot in R using the following commands.\nplot(x_axis_data, y_axis_data) text(x_axis_data, y_axis_data, labels= names_vec) In order to fit a line through the scatter plot we can use abline commands, which adds lines to the existing plots\nplot(x_axis_data, y_axis_data) abline(a, b) # here a is the intercept while b is the slope for equation of line y ~ a + bx abline(lm(y_axis_data ~ x_axis_data)) # this fits a linear regression line through the scatter-plot. gglots ggplot is a versatile tool. I prefer to use ggplot alongwith dplry, which helps with the clarity of code. Given below is the general structure of ggplot that I follow. I like to divide the plot into three parts - (i) data points and plot attribute, (ii) axis scaling, (iii) labels\nScatterplots df %\u0026gt;% ggplot(aes(x = col1, y = col2)) + # this feeds the data geom_point() + # to add scatter plots geom_smooth(method=\u0026#34;lm\u0026#34;) + # add linear fit through scatter plot geom_line() + # connects the dots with a line theme_bw() + # nice simple b/w theme scale_x_continuous(n.breaks=10) + # number of breaks on x-axis scale_y_continuous(n.breaks=10) + labs(title=\u0026#34;Plot\u0026#34;,y=\u0026#34;y-lab\u0026#34;, x=\u0026#34;x-lab\u0026#34;) + # to assign labels to axis geom_text(label=aes(col_with_labels), nudge_x=0.2, nudge_y=0.2 ,check_overlap=T) # geom_text adds text to the points, nudge adjusts the labels ggsave(\u0026#34;path/fine_name.png\u0026#34;) # save the current plot ggsave attributes ggsave(\u0026#34;path/filename.png\u0026#34;, scale = 1, width = 2.0, height = 1.5, dpi = 300, # dpi stands for dots per inch limitsize = TRUE, units = c(\u0026#34;cm\u0026#34;)) # unit size can be changed to in, mm as well "
 },
 {
 	"uri": "/random/us_geo_division/",
@@ -193,7 +228,7 @@
 	"title": "Basic_data_analysis",
 	"tags": [],
 	"description": "",
-	"content": "Loading Dataset dataset_name \u0026lt;- read_dta(\u0026#34;./family_data.dta\u0026#34;) # read stata dta requires library(haven) df\u0026lt;-read.csv(\u0026#34;path\u0026#34;, header = T, sep = \u0026#34;,\u0026#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Saving Dataset save(df, \u0026#34;path/file_name.Rda\u0026#34;) # to save in Rda format write_dta(df, \u0026#34;path/file_name.dta\u0026#34;) # to save in stata dta format, requires library(haven) Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.e rows and columns str(data) # give the structure of columns in the dataset Select Columns subset(df, df$colname = c(a, c)) # This will select columns a and c from the dataset subset(df, select = c(a, c)) # another way of writing the same thing subset(df, select = -c(a, c)) # this will select all columns except a and c df[c(\u0026#34;a\u0026#34;, \u0026#34;c\u0026#34;)] # select a and c column. Note that we have to write column names as strings in this case unlike when using subset df %\u0026gt;% select(a, c) # select columns a and c # requires library(dplyr) df %\u0026gt;% select(!(a:c)) # select all columns from a to c # There are many more selection options available with dplyr library -- look for the manual Rename Columns rename(df, new_name1 = old_name1, nn2 = on2) # requires library(dplyr) Reorder Columns df %\u0026gt;% select(col1, col2, col3, col4) # requires library(dplyr) # the above selects data in the order of columns as shown above df %\u0026gt;% select(col1, col2, everything()) # this order col1, col2 and keeps all the columns same as before. Select Rows df[(is.na(df$col1) \u0026amp; df$col2 !=0) | df$col3 == 10, ] # select rows based on given conditions df[!(df$colname %in% c(\u0026#34;a\u0026#34;, \u0026#34;b\u0026#34;)), ] # select rows excluding the ones that have a or c in colname. Sort Datasets based on Columns df_new \u0026lt;- df[order(df$col1,df$col2), ] This will sort the dataset in ascending order based on col1 and col2. For inverse sorting we just need to use the negative sign.\nCounting in R length(unique(vec)) # count the number of unique values sum(is.na(vec)) # count the number of NAs Reference https://www.statology.org/reorder-columns-r/\n"
+	"content": "Loading Dataset dataset_name \u0026lt;- read_dta(\u0026#34;./family_data.dta\u0026#34;) # read stata dta requires library(haven) df\u0026lt;-read.csv(\u0026#34;path\u0026#34;, header = T, sep = \u0026#34;,\u0026#34;, skip = 0) # read csv, include 1st row as column names, skip 0 rows. Running other scripts source(\u0026#34;path/file_name.R\u0026#34;) Saving Dataset save(df, \u0026#34;path/file_name.Rda\u0026#34;) # to save in Rda format write_dta(df, \u0026#34;path/file_name.dta\u0026#34;) # to save in stata dta format, requires library(haven) write.csv(df, \u0026#34;path/filename.csv\u0026#34;, row.names = F) #save as csv Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.e rows and columns str(data) # give the structure of columns in the dataset Select and Filter df %\u0026gt;% select(c(a, b, c)) # select columns df %\u0026gt;% select(-c(a, b)) # deselect columns df %\u0026gt;% filter(col1 \u0026gt; 20) # filter rows Select Columns subset(df, df$colname = c(a, c)) # This will select columns a and c from the dataset subset(df, select = c(a, c)) # another way of writing the same thing subset(df, select = -c(a, c)) # this will select all columns except a and c df[c(\u0026#34;a\u0026#34;, \u0026#34;c\u0026#34;)] # select a and c column. Note that we have to write column names as strings in this case unlike when using subset df %\u0026gt;% select(a, c) # select columns a and c # requires library(dplyr) df %\u0026gt;% select(!(a:c)) # select all columns from a to c # There are many more selection options available with dplyr library -- look for the manual Rename Columns rename(df, new_name1 = old_name1, nn2 = on2) # requires library(dplyr) Reorder Columns df %\u0026gt;% select(col1, col2, col3, col4) # requires library(dplyr) # the above selects data in the order of columns as shown above df %\u0026gt;% select(col1, col2, everything()) # this order col1, col2 and keeps all the columns same as before. Select Rows df[(is.na(df$col1) \u0026amp; df$col2 !=0) | df$col3 == 10, ] # select rows based on given conditions df[!(df$colname %in% c(\u0026#34;a\u0026#34;, \u0026#34;b\u0026#34;)), ] # select rows excluding the ones that have a or c in colname. df %\u0026gt;% filter(col1 = \u0026#34;ab\u0026#34;) # select all rows in which col1 == \u0026#34;ab\u0026#34; ; requires library(dplyr) Sort Datasets based on Columns df_new \u0026lt;- df[order(df$col1,df$col2), ] This will sort the dataset in ascending order based on col1 and col2. For inverse sorting we just need to use the negative sign.\nCounting in R length(unique(vec)) # count the number of unique values sum(is.na(vec)) # count the number of NAs Reference https://www.statology.org/reorder-columns-r/\n"
 },
 {
 	"uri": "/programming/r/r_basics/",
@@ -229,34 +264,6 @@
 	"tags": [],
 	"description": "",
 	"content": "How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.\nTo set the working directoty use the command:\ncd \u0026#34;\u0026lt;path to file\u0026gt;\u0026#34; cd \u0026#34;E:\\dataset\u0026#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.\nglobal \u0026lt;var_name\u0026gt; \u0026#34;\u0026lt;directory_path_string\u0026gt;\u0026#34; global dataset \u0026#34;E:\\dataset\u0026#34; cd \u0026#34;$dataset\u0026#34; How to load dataset in stata? For this we use the following command.\nuse \u0026#34;\u0026lt;path_to_file\u0026gt;\u0026#34; use \u0026#34;E:\\dataset\\cars.dta\u0026#34; Basic data exploration in stata Once the dataset is laoded in temperory memory one can use the following commands.\ndescribe // gives the number of obervations and a list of variables codebook // gives summary statistics for each of the variable. The execution if this command may be slow if there are a lot of obervation or variables in the dataset. sum \u0026lt;variable_name\u0026gt; // gives the summary statistics for the selected variable list \u0026lt;var_name\u0026gt; // also give brief summary stats for the variables Another useful thing to identify about the dataset is what consititues a unique observation in the dataset.\nHelpful References There are a lot of resources out there to learn stata. Below are links to a few of them which themselves contain further links depending on the specifics.\nhttps://wlm.userweb.mwn.de/Stata/ https://www.stata.com/links/resources-for-learning-stata/ "
-},
-{
-	"uri": "/programming/git/",
-	"title": "Git",
-	"tags": [],
-	"description": "",
-	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
-},
-{
-	"uri": "/programming/",
-	"title": "Programming",
-	"tags": [],
-	"description": "",
-	"content": "This directory contains some very basic tutorials on programming languages that would come handy for data analysis.\n"
-},
-{
-	"uri": "/programming/r/",
-	"title": "R",
-	"tags": [],
-	"description": "",
-	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
-},
-{
-	"uri": "/programming/stata/",
-	"title": "Stata",
-	"tags": [],
-	"description": "",
-	"content": "Welcome! This website is dedicted to any reader who may find the content here useful.\n"
 },
 {
 	"uri": "/programming/creating_website/",
